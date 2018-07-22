@@ -1,0 +1,2077 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+       <html xmlns="http://www.w3.org/1999/xhtml"
+             xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by Half-Baked Software, registered to Pixel."></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="Pixel" />
+<meta name="DC:Title" content="DBV" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
+<title>
+DBV
+</title>
+
+<!-- Made with executable version 6.3 Release 0 Build 5 -->
+
+<!-- The following insertion allows you to add your own code directly to this head tag from the configuration screen -->
+
+
+
+<style type="text/css">
+
+
+/* This is the CSS stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data based on configuration settings when the exercise is built. */
+
+/* BeginCorePageCSS */
+
+/* Made with executable version 6.3 Release 0 Build 5 */
+
+
+/* Hack to hide a nested Quicktime player from IE, which can't handle it. */
+* html object.MediaPlayerNotForIE {
+	display: none;
+}
+
+body{
+	font-family: Geneva,Arial,sans-serif;
+	background-color: #C0C0C0;
+	color: #000000;
+ 
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: small;
+}
+
+p{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+table,div,span,td{
+	font-size: 100%;
+	color: #000000;
+}
+
+div.Titles{
+	padding: 0.5em;;
+	text-align: center;
+	color: #000000;
+}
+
+button{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 100%;
+	display: inline;
+}
+
+.ExerciseTitle{
+	font-size: 140%;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	font-size: 120%;
+	color: #000000;
+}
+
+div.StdDiv{
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: 100%;
+	color: #000000;
+	padding: 0.5em;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #000000;
+	margin-bottom: 1px;
+}
+
+/* EndCorePageCSS */
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+}
+
+.CentredRTLText{
+	text-align: center;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", Geneva,Arial,sans-serif;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000000;
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000000;
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FeedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{
+	color: #000000;
+}
+
+.LeftItem{
+	font-size: 100%;
+	color: #000000;
+	text-align: left;
+}
+
+.RightItem{
+	font-weight: bold;
+	font-size: 100%;
+	color: #000000;
+}
+
+span.CorrectMark{
+
+}
+
+input, textarea{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 120%;
+}
+
+select{
+	font-size: 100%;
+}
+
+div.Feedback {
+	background-color: #C0C0C0;
+	left: 33%;
+	width: 34%;
+	top: 33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+	position: absolute;
+	display: none;
+	font-size: 100%;
+}
+
+
+
+
+div.ExerciseDiv{
+	color: #000000;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 90%;
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+table.FlashcardTable tr{
+	border-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+
+table.FlashcardTable td.Showing{
+	font-size: 140%;
+	text-align: center;
+	width: 50%;
+	display: table-cell;
+	padding: 2em;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+table.FlashcardTable td.Hidden{
+	display: none;
+}
+
+/* JMix styles */
+div#SegmentDiv{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+}
+
+a.ExSegment{
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+span.RemainingWordList{
+	font-style: italic;
+}
+
+div.DropLine {
+	position: absolute;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #000000;
+	width: 80%;
+}
+
+/* JCloze styles */
+
+.ClozeWordList{
+	text-align: center;
+	font-weight: bold;
+}
+
+div.ClozeBody{
+	text-align: left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	line-height: 2.0
+}
+
+span.GapSpan{
+	font-weight: bold;
+}
+
+/* JCross styles */
+
+table.CrosswordGrid{
+	margin: auto auto 1em auto;
+	border-collapse: collapse;
+	padding: 0px;
+	background-color: #000000;
+}
+
+table.CrosswordGrid tbody tr td{
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 140%;
+	padding: 1px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid span{
+	color: #000000;
+}
+
+table.CrosswordGrid td.BlankCell{
+	background-color: #000000;
+	color: #000000;
+}
+
+table.CrosswordGrid td.LetterOnlyCell{
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+	font-weight: bold;
+}
+
+table.CrosswordGrid td.NumLetterCell{
+	text-align: left;
+	vertical-align: top;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 1px;
+	font-weight: bold;
+}
+
+.NumLetterCellText{
+	cursor: pointer;
+	color: #000000;
+}
+
+.GridNum{
+	vertical-align: super;
+	font-size: 66%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+}
+
+.GridNum:hover, .GridNum:visited{
+	color: #000000;
+}
+
+table#Clues{
+	margin: auto;
+	vertical-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+
+table.ClueList{
+  margin: auto;
+}
+
+td.ClueNum{
+	text-align: right;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;
+}
+
+div#ClueEntry{
+	text-align: left;
+	margin-bottom: 1em;
+}
+
+/* Keypad styles */
+
+div.Keypad{
+	text-align: center;
+	display: none; /* initially hidden, shown if needed */
+	margin-bottom: 0.5em;
+}
+
+div.Keypad button{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 120%;
+	background-color: #ffffff;
+	color: #000000;
+	width: 2em;
+}
+
+/* JQuiz styles */
+
+div.QuestionNavigation{
+	text-align: center;
+}
+
+.QNum{
+	margin: 0em 1em 0.5em 1em;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+textarea{
+	font-family: Geneva,Arial,sans-serif;
+}
+
+.QuestionText{
+	text-align: left;
+	margin: 0px;
+	font-size: 100%;
+}
+
+.Answer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+}
+
+.PartialAnswer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.Highlight{
+	color: #000000;
+	background-color: #ffff00;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+ol.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padding: 1em;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+}
+
+ol.MCAnswers{
+	text-align: left;
+	list-style-type: upper-alpha;
+	padding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+
+ol.MSelAnswers{
+	text-align: left;
+	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	padding: 1em;
+}
+
+.FuncButton {
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #FFFFFF;
+
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncButtonUp {
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+
+	background-color: #000000;
+	color: #FFFFFF;
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncButtonDown {
+	color: #FFFFFF;
+	text-align: center;
+	border-style: solid;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #ffffff;
+	border-bottom-color: #ffffff;
+	background-color: #000000;
+	color: #FFFFFF;
+
+	border-width: 2px;
+	padding: 3px 6px 3px 6px;
+	cursor: pointer;
+}
+
+/*BeginNavBarStyle*/
+
+div.NavButtonBar{
+	background-color: #000000;
+	text-align: center;
+	margin: 2px 0px 2px 0px;
+	clear: both;
+	font-size: 100%;
+}
+
+.NavButton {
+	border-style: solid;
+	
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	background-color: #000000;
+	color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonUp {
+	border-style: solid;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	color: #000000;
+	background-color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonDown {
+	border-style: solid;
+
+	border-left-color: #000000;
+	border-top-color: #000000;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+	color: #000000;
+	background-color: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+/*EndNavBarStyle*/
+
+a{
+	color: #0000FF;
+}
+
+a:visited{
+	color: #0000CC;
+}
+
+a:hover{
+	color: #0000FF;
+}
+
+div.CardStyle {
+	position: absolute;
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 100%;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	background-color: #FFFFFF;
+	left: -50px;
+	top: -50px;
+	overflow: visible;
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+</style>
+
+<script type="text/javascript">
+
+//<![CDATA[
+
+<!--
+
+
+
+
+function Client(){
+//if not a DOM browser, hopeless
+	this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name = navigator.appName;
+	this.ver = navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Gecko') > 1);
+	if (this.gecko){
+		this.geckoVer = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+//		if (this.geckoVer < 20020000){this.min = false;}
+	}
+	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebird') > 1);
+	
+//Look for Safari
+	this.safari = (this.ua.indexOf('Safari') > 1);
+	if (this.safari){
+		this.gecko = false;
+	}
+	
+//Look for IE
+	this.ie = (this.ua.indexOf('MSIE') > 0);
+	if (this.ie){
+		this.ieVer = parseFloat(this.ua.substring(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer < 5.5){this.min = false;}
+	}
+	
+//Look for Opera
+	this.opera = (this.ua.indexOf('Opera') > 0);
+	if (this.opera){
+		this.operaVer = parseFloat(this.ua.substring(this.ua.indexOf('Opera')+6, this.ua.length));
+		if (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+//		alert('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible ie5mac
+	this.ie5mac = (this.ie&&this.mac&&(this.ieVer<6));
+}
+
+var C = new Client();
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HANDLING NAV BUTTONS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}
+
+function NavBtnDown(Btn){
+	Btn.className = 'NavButtonDown';
+}
+//[/strNavBarJS]
+
+function FuncBtnOver(Btn){
+	if (Btn.className != 'FuncButtonDown'){Btn.className = 'FuncButtonUp';}
+}
+
+function FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Btn){
+	Btn.className = 'FuncButtonDown';
+}
+
+function FocusAButton(){
+	if (document.getElementById('CheckButton1') != null){
+		document.getElementById('CheckButton1').focus();
+	}
+	else{
+		if (document.getElementById('CheckButton2') != null){
+			document.getElementById('CheckButton2').focus();
+		}
+		else{
+			document.getElementsByTagName('button')[0].focus();
+		}
+	}
+}
+
+
+
+
+//CODE FOR HANDLING DISPLAY OF POPUP FEEDBACK BOX
+
+var topZ = 1000;
+
+function ShowMessage(Feedback){
+	var Output = Feedback + '<br /><br />';
+	document.getElementById('FeedbackContent').innerHTML = Output;
+	var FDiv = document.getElementById('FeedbackDiv');
+	topZ++;
+	FDiv.style.zIndex = topZ;
+	FDiv.style.top = TopSettingWithScrollOffset(30) + 'px';
+
+	FDiv.style.display = 'block';
+
+	ShowElements(false, 'input');
+	ShowElements(false, 'select');
+	ShowElements(false, 'object');
+	ShowElements(true, 'object', 'FeedbackContent');
+
+//Focus the OK button
+	setTimeout("document.getElementById('FeedbackOKButton').focus()", 50);
+	
+//
+}
+
+function ShowElements(Show, TagName, ContainerToReverse){
+// added third argument to allow objects in the feedback box to appear
+//IE bug -- hide all the form elements that will show through the popup
+//FF on Mac bug : doesn't redisplay objects whose visibility is set to visible
+//unless the object's display property is changed
+
+	//get container object (by Id passed in, or use document otherwise)
+	TopNode = document.getElementById(ContainerToReverse);
+	var Els;
+	if (TopNode != null) {
+		Els = TopNode.getElementsByTagName(TagName);
+	} else {
+		Els = document.getElementsByTagName(TagName);
+	}
+
+	for (var i=0; i<Els.length; i++){
+		if (TagName == "object") {
+			//manipulate object elements in all browsers
+			if (Show == true){
+				Els[i].style.visibility = 'visible';
+				//get Mac FireFox to manipulate display, to force screen redraw
+				if (C.mac && C.gecko) {Els[i].style.display = '';}
+			}
+			else{
+				Els[i].style.visibility = 'hidden';
+				if (C.mac && C.gecko) {Els[i].style.display = 'none';}
+			}
+		} 
+		else {
+			// tagName is either input or select (that is, Form Elements)
+			// ie6 has a problem with Form elements, so manipulate those
+			if (C.ie) {
+				if (C.ieVer < 7) {
+					if (Show == true){
+						Els[i].style.visibility = 'visible';
+					}
+					else{
+						Els[i].style.visibility = 'hidden';
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+function HideFeedback(){
+	document.getElementById('FeedbackDiv').style.display = 'none';
+	ShowElements(true, 'input');
+	ShowElements(true, 'select');
+	ShowElements(true, 'object');
+	if (Finished == true){
+		Finish();
+	}
+}
+
+
+//GENERAL UTILITY FUNCTIONS AND VARIABLES
+
+//PAGE DIMENSION FUNCTIONS
+function PageDim(){
+//Get the page width and height
+	this.W = 600;
+	this.H = 400;
+	this.W = document.getElementsByTagName('body')[0].clientWidth;
+	this.H = document.getElementsByTagName('body')[0].clientHeight;
+}
+
+var pg = null;
+
+function GetPageXY(El) {
+	var XY = {x: 0, y: 0};
+	while(El){
+		XY.x += El.offsetLeft;
+		XY.y += El.offsetTop;
+		El = El.offsetParent;
+	}
+	return XY;
+}
+
+function GetScrollTop(){
+	if (typeof(window.pageYOffset) == 'number'){
+		return window.pageYOffset;
+	}
+	else{
+		if ((document.body)&&(document.body.scrollTop)){
+			return document.body.scrollTop;
+		}
+		else{
+			if ((document.documentElement)&&(document.documentElement.scrollTop)){
+				return document.documentElement.scrollTop;
+			}
+			else{
+				return 0;
+			}
+		}
+	}
+}
+
+function GetViewportHeight(){
+	if (typeof window.innerHeight != 'undefined'){
+		return window.innerHeight;
+	}
+	else{
+		if (((typeof document.documentElement != 'undefined')&&(typeof document.documentElement.clientHeight !=
+     'undefined'))&&(document.documentElement.clientHeight != 0)){
+			return document.documentElement.clientHeight;
+		}
+		else{
+			return document.getElementsByTagName('body')[0].clientHeight;
+		}
+	}
+}
+
+function TopSettingWithScrollOffset(TopPercent){
+	var T = Math.floor(GetViewportHeight() * (TopPercent/100));
+	return GetScrollTop() + T; 
+}
+
+//CODE FOR AVOIDING LOSS OF DATA WHEN BACKSPACE KEY INVOKES history.back()
+var InTextBox = false;
+
+function SuppressBackspace(e){ 
+	if (InTextBox == true){return;}
+	if (C.ie) {
+		thisKey = window.event.keyCode;
+	}
+	else {
+		thisKey = e.keyCode;
+	}
+
+	var Suppress = false;
+
+	if (thisKey == 8) {
+		Suppress = true;
+	}
+
+	if (Suppress == true){
+		if (C.ie){
+			window.event.returnValue = false;	
+			window.event.cancelBubble = true;
+		}
+		else{
+			e.preventDefault();
+		}
+	}
+}
+
+if (C.ie){
+	document.attachEvent('onkeydown',SuppressBackspace);
+	window.attachEvent('onkeydown',SuppressBackspace);
+}
+else{
+	if (window.addEventListener){
+		window.addEventListener('keypress',SuppressBackspace,false);
+	}
+}
+
+function ReduceItems(InArray, ReduceToSize){
+	var ItemToDump=0;
+	var j=0;
+	while (InArray.length > ReduceToSize){
+		ItemToDump = Math.floor(InArray.length*Math.random());
+		InArray.splice(ItemToDump, 1);
+	}
+}
+
+function Shuffle(InArray){
+	var Num;
+	var Temp = new Array();
+	var Len = InArray.length;
+
+	var j = Len;
+
+	for (var i=0; i<Len; i++){
+		Temp[i] = InArray[i];
+	}
+
+	for (i=0; i<Len; i++){
+		Num = Math.floor(j  *  Math.random());
+		InArray[i] = Temp[Num];
+
+		for (var k=Num; k < (j-1); k++) {
+			Temp[k] = Temp[k+1];
+		}
+		j--;
+	}
+	return InArray;
+}
+
+function WriteToInstructions(Feedback) {
+	document.getElementById('InstructionsDiv').innerHTML = Feedback;
+
+}
+
+
+
+
+function EscapeDoubleQuotes(InString){
+	return InString.replace(/"/g, '&quot;')
+}
+
+function TrimString(InString){
+        var x = 0;
+
+        if (InString.length != 0) {
+                while ((InString.charAt(InString.length - 1) == '\u0020') || (InString.charAt(InString.length - 1) == '\u000A') || (InString.charAt(InString.length - 1) == '\u000D')){
+                        InString = InString.substring(0, InString.length - 1)
+                }
+
+                while ((InString.charAt(0) == '\u0020') || (InString.charAt(0) == '\u000A') || (InString.charAt(0) == '\u000D')){
+                        InString = InString.substring(1, InString.length)
+                }
+
+                while (InString.indexOf('  ') != -1) {
+                        x = InString.indexOf('  ')
+                        InString = InString.substring(0, x) + InString.substring(x+1, InString.length)
+                 }
+
+                return InString;
+        }
+
+        else {
+                return '';
+        }
+}
+
+function FindLongest(InArray){
+	if (InArray.length < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i<InArray.length; i++){
+		if (InArray[i].length > InArray[Longest].length){
+			Longest = i;
+		}
+	}
+	return Longest;
+}
+
+//UNICODE CHARACTER FUNCTIONS
+function IsCombiningDiacritic(CharNum){
+	var Result = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNum >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Result = Result || (((CharNum >= 0x3099)&&(CharNum <= 0x309a))||((CharNum >= 0xfe20)&&(CharNum <= 0xfe23)));
+	return Result;
+}
+
+function IsCJK(CharNum){
+	return ((CharNum >= 0x3000)&&(CharNum < 0xd800));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILL TEXT BOXES FROM CACHE IF NOT PREVENTED
+function ClearTextBoxes(){
+	var NList = document.getElementsByTagName('input');
+	for (var i=0; i<NList.length; i++){
+		if ((NList[i].id.indexOf('Guess') > -1)||(NList[i].id.indexOf('Gap') > -1)){
+			NList[i].value = '';
+		}
+		if (NList[i].id.indexOf('Chk') > -1){
+			NList[i].checked = '';
+		}
+	}
+}
+
+//EXTENSION TO ARRAY OBJECT
+function Array_IndexOf(Input){
+	var Result = -1;
+	for (var i=0; i<this.length; i++){
+		if (this[i] == Input){
+			Result = i;
+		}
+	}
+	return Result;
+}
+Array.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG WITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C.ie)&&(document.getElementById('Reading') != null)){
+		if (document.getElementById('BottomNavBar') != null){
+			document.getElementById('TheBody').removeChild(document.getElementById('BottomNavBar'));
+		}
+	}
+}
+
+
+
+
+//HOTPOTNET-RELATED CODE
+
+var HPNStartTime = (new Date()).getTime();
+var SubmissionTimeout = 30000;
+var Detail = ''; //Global that is used to submit tracking data
+
+function Finish(){
+//If there's a form, fill it out and submit it
+	if (document.store != null){
+		Frm = document.store;
+		Frm.starttime.value = HPNStartTime;
+		Frm.endtime.value = (new Date()).getTime();
+		Frm.mark.value = Score;
+		Frm.detail.value = Detail;
+		Frm.submit();
+	}
+}
+
+
+
+
+
+//JQUIZ CORE JAVASCRIPT CODE
+
+var CurrQNum = 0;
+var CorrectIndicator = '&#x2713;';
+var IncorrectIndicator = 'X';
+var YourScoreIs = 'Your score is ';
+
+//New for 6.2.2.0
+var CompletedSoFar = 'Questions completed so far: ';
+var ExerciseCompleted = 'You have completed the exercise.';
+var ShowCompletedSoFar = true;
+
+var ContinuousScoring = true;
+var CorrectFirstTime = 'Questions answered correctly first time: ';
+var ShowCorrectFirstTime = true;
+var ShuffleQs = true;
+var ShuffleAs = true;
+var DefaultRight = 'Correct!';
+var DefaultWrong = 'Sorry! Try again.';
+var QsToShow = 46;
+var Score = 0;
+var Finished = false;
+var Qs = null;
+var QArray = new Array();
+var ShowingAllQuestions = false;
+var ShowAllQuestionsCaption = 'Show all questions';
+var ShowOneByOneCaption = 'Show questions one by one';
+var State = new Array();
+var Feedback = '';
+var TimeOver = false;
+var strInstructions = '';
+var Locked = false;
+
+//The following variable can be used to add a message explaining that
+//the question is finished, so no further marking will take place.
+var strQuestionFinished = '';
+
+function CompleteEmptyFeedback(){
+	var QNum, ANum;
+	for (QNum=0; QNum<I.length; QNum++){
+//Only do this if not multi-select
+		if (I[QNum][2] != '3'){
+  		for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+  			if (I[QNum][3][ANum][1].length < 1){
+  				if (I[QNum][3][ANum][2] > 0){
+  					I[QNum][3][ANum][1] = DefaultRight;
+  				}
+  				else{
+  					I[QNum][3][ANum][1] = DefaultWrong;
+  				}
+  			}
+  		}
+		}
+	}
+}
+
+function SetUpQuestions(){
+	var AList = new Array(); 
+	var QList = new Array();
+	var i, j;
+	Qs = document.getElementById('Questions');
+	while (Qs.getElementsByTagName('li').length > 0){
+		QList.push(Qs.removeChild(Qs.getElementsByTagName('li')[0]));
+	}
+	var DumpItem = 0;
+	if (QsToShow > QList.length){
+		QsToShow = QList.length;
+	}
+	while (QsToShow < QList.length){
+		DumpItem = Math.floor(QList.length*Math.random());
+		for (j=DumpItem; j<(QList.length-1); j++){
+			QList[j] = QList[j+1];
+		}
+		QList.length = QList.length-1;
+	}
+	if (ShuffleQs == true){
+		QList = Shuffle(QList);
+	}
+	if (ShuffleAs == true){
+		var As;
+		for (var i=0; i<QList.length; i++){
+			As = QList[i].getElementsByTagName('ol')[0];
+			if (As != null){
+  			AList.length = 0;
+				while (As.getElementsByTagName('li').length > 0){
+					AList.push(As.removeChild(As.getElementsByTagName('li')[0]));
+				}
+				AList = Shuffle(AList);
+				for (j=0; j<AList.length; j++){
+					As.appendChild(AList[j]);
+				}
+			}
+		}
+	}
+	
+	for (i=0; i<QList.length; i++){
+		Qs.appendChild(QList[i]);
+		QArray[QArray.length] = QList[i];
+	}
+
+//Show the first item
+	QArray[0].style.display = '';
+	
+//Now hide all except the first item
+	for (i=1; i<QArray.length; i++){
+		QArray[i].style.display = 'none';
+	}		
+	SetQNumReadout();
+	
+	SetFocusToTextbox();
+}
+
+function SetFocusToTextbox(){
+//if there's a textbox, set the focus in it
+	if (QArray[CurrQNum].getElementsByTagName('input')[0] != null){
+		QArray[CurrQNum].getElementsByTagName('input')[0].focus();
+//and show a keypad if there is one
+		if (document.getElementById('CharacterKeypad') != null){
+			document.getElementById('CharacterKeypad').style.display = 'block';
+		}
+	}
+	else{
+  	if (QArray[CurrQNum].getElementsByTagName('textarea')[0] != null){
+  		QArray[CurrQNum].getElementsByTagName('textarea')[0].focus();	
+//and show a keypad if there is one
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'block';
+			}
+		}
+//This added for 6.0.4.11: hide accented character buttons if no textbox
+		else{
+			if (document.getElementById('CharacterKeypad') != null){
+				document.getElementById('CharacterKeypad').style.display = 'none';
+			}
+		}
+	}
+}
+
+function ChangeQ(ChangeBy){
+//The following line prevents moving to another question until the current
+//question is answered correctly. Uncomment it to enable this behaviour. 
+//	if (State[CurrQNum][0] == -1){return;}
+	if (((CurrQNum + ChangeBy) < 0)||((CurrQNum + ChangeBy) >= QArray.length)){return;}
+	QArray[CurrQNum].style.display = 'none';
+	CurrQNum += ChangeBy;
+	QArray[CurrQNum].style.display = '';
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+	SetQNumReadout();
+	SetFocusToTextbox();
+}
+
+var HiddenReadingShown = false;
+function ShowSpecialReadingForQuestion(){
+//Undocumented function for showing specific reading text elements which change with each question
+//Added on 10/12/2004
+	if (document.getElementById('ReadingDiv') != null){
+		if (HiddenReadingShown == true){
+			document.getElementById('ReadingDiv').innerHTML = '';
+		}
+		if (QArray[CurrQNum] != null){
+//Fix for 6.0.4.25
+			var Children = QArray[CurrQNum].getElementsByTagName('div');
+			for (var i=0; i<Children.length; i++){
+			if (Children[i].className=="HiddenReading"){
+					document.getElementById('ReadingDiv').innerHTML = Children[i].innerHTML;
+					HiddenReadingShown = true;
+//Hide the ShowAllQuestions button to avoid confusion
+					if (document.getElementById('ShowMethodButton') != null){
+						document.getElementById('ShowMethodButton').style.display = 'none';
+					}
+				}
+			}	
+		}
+	}
+}
+
+function SetQNumReadout(){
+	document.getElementById('QNumReadout').innerHTML = (CurrQNum+1) + ' / ' + QArray.length;
+	if ((CurrQNum+1) >= QArray.length){
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('NextQButton') != null){
+			document.getElementById('NextQButton').style.visibility = 'visible';
+		}
+	}
+	if (CurrQNum <= 0){
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'hidden';
+		}
+	}
+	else{
+		if (document.getElementById('PrevQButton') != null){
+			document.getElementById('PrevQButton').style.visibility = 'visible';
+		}
+	}
+}
+
+var I=new Array();
+I[0]=new Array();I[0][0]=100;
+I[0][1]='';
+I[0][2]='3';
+I[0][3]=new Array();
+I[0][3][0]=new Array('Die Bildbearbeitung dient bei der Bildvorverarbeitung vor allem zum Festlegen von ROI\u2019s und zur Trennung von Objekten und Hintergrund.','',1,100,1);
+I[0][3][1]=new Array('Bei der Bildbearbeitung werden einige wenige markante Merkmale berechnet und ausgegeben.','',0,0,1);
+I[0][3][2]=new Array('Die Bildbearbeitung dient zur Modifikation von Bildern z. B. zur Hervorhebung von Details, zur Kontrastverbesserung oder zu \u00C4nderungen unter \u00E4sthetisch-k\u00FCnstlerischen Gesichtspunkten usw.. Das Ergebnis ist wiederum ein Bild.','',1,100,1);
+I[0][3][3]=new Array('Die Bildbearbeitung findet ausschlie\u00DFlich im Bereich der Hobby-Fotografie Anwendung und hat nichts mit der Bildverarbeitung zu tun.','',0,0,1);
+I[1]=new Array();I[1][0]=100;
+I[1][1]='';
+I[1][2]='3';
+I[1][3]=new Array();
+I[1][3][0]=new Array('Durchsuchung eines Bildes nach markanten Strukturen mit der Suchrichtung von oben nach unten,','',0,0,1);
+I[1][3][1]=new Array('Durchsuchung eines Bildes nach Strukturmustern und anschlie\u00DFende Zuordnung der gefundenen Strukturen zu Objektklassen,','',0,0,1);
+I[1][3][2]=new Array('Vorgabe eines Referenzmusters und Durchsuchung des Bildes nach \u00FCbereinstimmenden Mustern,','',1,100,1);
+I[1][3][3]=new Array('Durchsuchung eines Bildes nach Objekten von Klassen h\u00F6chster Ordnung, danach innerhalb dieser Objekte Suche nach Objekten n\u00E4chst niederer Ordnung, Wiederholung bis zur Klasse niedrigster Ordnung','',0,0,1);
+I[2]=new Array();I[2][0]=100;
+I[2][1]='';
+I[2][2]='3';
+I[2][3]=new Array();
+I[2][3][0]=new Array('Durchsuchung eines Bildes nach markanten Strukturen mit der Suchrichtung von unten nach oben,','',0,0,1);
+I[2][3][1]=new Array('Durchsuchung eines Bildes nach Strukturmustern und anschlie\u00DFende Zuordnung der gefundenen Strukturen zu Objektklassen,','',1,100,1);
+I[2][3][2]=new Array('Vorgabe eines Referenzmusters und Durchsuchung des Bildes nach \u00FCbereinstimmenden Mustern,','',0,0,1);
+I[2][3][3]=new Array('Durchsuchung eines Bildes nach Objekten von Klassen niedrigster Ordnung, danach Zusammenfassen dieser Objekte und Zuweisung zu n\u00E4chst niederer Ordnung, Wiederholung bis zur Klasse h\u00F6chster Ordnung','',0,0,1);
+I[3]=new Array();I[3][0]=100;
+I[3][1]='';
+I[3][2]='3';
+I[3][3]=new Array();
+I[3][3][0]=new Array('der Invertierung der aufgenommenen Grauwerte,','',0,0,1);
+I[3][3][1]=new Array('der Korrektur von Fehlern bei der Bildaufnahme,','',1,100,1);
+I[3][3][2]=new Array('der mathematischen Nachbildung des Prozesses der Bildaufnahme','',0,0,1);
+I[3][3][3]=new Array('Der Hervorhebung markanter Strukturen zum Zwecke der sp\u00E4teren Klassifizierung','',0,0,1);
+I[3][3][4]=new Array('Der Bildrestauration','',1,100,1);
+I[4]=new Array();I[4][0]=100;
+I[4][1]='';
+I[4][2]='3';
+I[4][3]=new Array();
+I[4][3][0]=new Array('Sie wird ausschlie\u00DFlich durch Strahlen beschrieben, welche sich geradlinig ausbreiten bzw. an Grenzfl\u00E4chen gebrochen oder reflektiert werden. Die Welleneigenschaften des Lichts werden vernachl\u00E4ssigt.','',1,100,1);
+I[4][3][1]=new Array('Ber\u00FCcksichtigung ausschlie\u00DFlich von geradlinigen Strahlen, welche an Grenzfl\u00E4chen gebeugt werden,','',0,0,1);
+I[4][3][2]=new Array('Anwendung der Strahlenoptik ausschlie\u00DFlich auf sph\u00E4rische Grenzfl\u00E4chen','',0,0,1);
+I[4][3][3]=new Array('Grundlage f\u00FCr die Berechnung von Strahlenverl\u00E4ufen in der geometrischen Optik sind das Brechungs- bzw. Reflexionsgesetz; welches auf brechende bzw. reflektierende Grenzfl\u00E4chen angewendet wird','',1,100,1);
+I[4][3][4]=new Array('Anwendung der Kleinwinkeln\u00E4herung auf das Reflexions- und Brechungsgesetz','',0,0,1);
+I[5]=new Array();I[5][0]=100;
+I[5][1]='';
+I[5][2]='3';
+I[5][3]=new Array();
+I[5][3][0]=new Array('Vereinfachung der Strahlenoptik durch Anwendung der Kleinwinkeln\u00E4herung auf Strahlen mit kleinem Einfallswinkel,','',1,100,1);
+I[5][3][1]=new Array('Beugung an sph\u00E4rischen Grenzfl\u00E4chen und Geradengleichungen,','',0,0,1);
+I[5][3][2]=new Array('Beugung an \u00D6ffnungs- und Feldblenden,','',0,0,1);
+I[5][3][3]=new Array('Annahme ausschlie\u00DFlich von Parallelstrahlen,','',0,0,1);
+I[5][3][4]=new Array('Die Paraxialoptik ist identisch mit der geometrischen Optik.','',0,0,1);
+I[6]=new Array();I[6][0]=100;
+I[6][1]='';
+I[6][2]='3';
+I[6][3]=new Array();
+I[6][3][0]=new Array('Hauptebenen sind die Eintritts- und die Austrittsebenen optischer Systeme.','',0,0,1);
+I[6][3][1]=new Array('Hauptebenen sind \u00E4quivalente Orte der Lichtbeugung in optisch abbildenden Systemen.','',0,0,1);
+I[6][3][2]=new Array('Hauptebenen sind \u00E4quivalente Orte der Lichtbrechung in optisch abbildenden Systemen.','',1,100,1);
+I[6][3][3]=new Array('Hauptebenen sind identisch mit der objekt- und bildseitigen Brennebene.','',0,0,1);
+I[6][3][4]=new Array('Mit Hilfe der Hauptebenen und der Brennweiten lassen sich die Strahleng\u00E4nge von optisch abbildenden Systemen n\u00E4herungsweise berechnen bzw. konstruieren.','',1,100,1);
+I[7]=new Array();I[7][0]=100;
+I[7][1]='';
+I[7][2]='3';
+I[7][3]=new Array();
+I[7][3][0]=new Array('\u00D6ffnungsblenden grenzen das Bildfeld ein, welches durch das optische System \u00FCbertragen und abgebildet wird.','',0,0,1);
+I[7][3][1]=new Array('Die \u00D6ffnungsblende hat Einfluss auf den \u00D6ffnungswinkel und die numerische Apertur eines Objektivs','',1,100,1);
+I[7][3][2]=new Array('Die \u00D6ffnungsblende ist grunds\u00E4tzlich identisch mit der Eintrittspupille eines Systems.','',0,0,1);
+I[7][3][3]=new Array('Mit der \u00D6ffnungsblende lassen sich der Abbildungsma\u00DFstab und die Sch\u00E4rfentiefe eines Objektivs einstellen.','',0,0,1);
+I[7][3][4]=new Array('Mit der \u00D6ffnungsblende lassen sich die Aufl\u00F6sung und die Sch\u00E4rfentiefe eines Objektivs einstellen.','',1,100,1);
+I[8]=new Array();I[8][0]=100;
+I[8][1]='';
+I[8][2]='3';
+I[8][3]=new Array();
+I[8][3][0]=new Array('Feldblenden haben Einfluss auf den \u00D6ffnungswinkel und die numerische Apertur eines Objektivs.','',0,0,1);
+I[8][3][1]=new Array('Feldblenden begrenzen die Gr\u00F6\u00DFe des abgebildeten Objektausschnittes.','',1,100,1);
+I[8][3][2]=new Array('Feldblenden an der falschen Position f\u00FChren zu sph\u00E4rischer und chromatischer Aberration im Bild','',0,0,1);
+I[8][3][3]=new Array('Feldblenden an der falschen Position f\u00FChren zu Vignettierungen im Bild.','',1,100,1);
+I[8][3][4]=new Array('Die Feldblende ist grunds\u00E4tzlich identisch mit der Eintrittspupille.','',0,0,1);
+I[9]=new Array();I[9][0]=100;
+I[9][1]='';
+I[9][2]='3';
+I[9][3]=new Array();
+I[9][3][0]=new Array('Punkte werden aufgrund wellenoptischer Effekte als ausgedehnte Beugungsfiguren abgebildet und k\u00F6nnen deshalb bei zu geringem Abstand nicht mehr unterschieden werden','',1,100,1);
+I[9][3][1]=new Array('Eng benachbarte kleine Strukturen l\u00F6schen sich aufgrund wellenoptischer Effekte komplett aus und k\u00F6nnen deshalb nicht mehr voneinander unterschieden werden.','',0,0,1);
+I[9][3][2]=new Array('Eine Definition der Aufl\u00F6sungsgrenze: die Hauptmaxima beider Beugungsmuster m\u00FCssen mindestens so weit entfernt sein wie das Hauptmaximum vom ersten Minimum','',1,100,1);
+I[9][3][3]=new Array('Die Aufl\u00F6sungsgrenze ergibt sich aus der Abbeschen Sinusbedingung.','',0,0,1);
+I[10]=new Array();I[10][0]=100;
+I[10][1]='';
+I[10][2]='3';
+I[10][3]=new Array();
+I[10][3][0]=new Array('Durch die Polarisation des auf die Kamera treffenden Lichtes erh\u00F6ht sich die optische Aufl\u00F6sung.','',0,0,1);
+I[10][3][1]=new Array('Mit polarisiertem Licht werden Kantenverl\u00E4ufe besonders gut hervorgehoben.','',0,0,1);
+I[10][3][2]=new Array('Direkte Reflexe spiegelnder Oberfl\u00E4chen sind meist polarisiert. Mittels in der richtigen Orientierung angeordneter Polarisationsfilter lassen sich st\u00F6rende Reflexionen somit unterdr\u00FCcken.','',1,100,1);
+I[10][3][3]=new Array('Polarisationsfilter unterdr\u00FCcken Streulichteinfl\u00FCsse, welche ausschlie\u00DFlich durch Oberfl\u00E4chenfehler optischer Bauelemente und Lichtbeugung entstehen.','',0,0,1);
+I[11]=new Array();I[11][0]=100;
+I[11][1]='';
+I[11][2]='3';
+I[11][3]=new Array();
+I[11][3][0]=new Array('extrem kleine Bauweise,','',0,0,1);
+I[11][3][1]=new Array('Integration von Kamera, A/D-Wandlung, Rechentechnik und BV-Software in einem Geh\u00E4use,','',1,100,1);
+I[11][3][2]=new Array('Integrierte LED-Beleuchtung,','',0,0,1);
+I[11][3][3]=new Array('Integration von Bildverarbeitung und weiteren sensorischen Funktionen (z.B. Lichtschranken, Laserabstandsmessung usw.)','',0,0,1);
+I[12]=new Array();I[12][0]=100;
+I[12][1]='';
+I[12][2]='3';
+I[12][3]=new Array();
+I[12][3][0]=new Array('Das generierte Bildsignal ist nicht pixelsynchron','',0,0,1);
+I[12][3][1]=new Array('Unterbrechung des aktuelle Videozyklus nach einem Triggerimpuls, danach mit geringer Zeitverz\u00F6gerung Start eines neuen Videozyklus (Belichtung und Auslesung)','',1,100,1);
+I[12][3][2]=new Array('Zur Beseitigung von Restladungen R\u00FCcksetzen des Bildsensors nach jedem Videozyklus durch ein aufw\u00E4ndiges Taktregime, Folge ist ein nichtsynchrones Videosignal.','',0,0,1);
+I[12][3][3]=new Array('3-Chip Farbkameras, bei welchen die 3 Farbkan\u00E4le nicht synchron zueinander ausgelesen werden','',0,0,1);
+I[13]=new Array();I[13][0]=100;
+I[13][1]='';
+I[13][2]='3';
+I[13][3]=new Array();
+I[13][3][0]=new Array('Ein Bayer-Sensor ist ein Farbbild-Sensor, bei welchen in rechteckigen Bl\u00F6cken von 4 Pixeln vor jedem Pixel jeweils ein Farbfilter positioniert ist. \u00DCblicherweise sind dies Filter der Farben Rot, Gr\u00FCn, Gelb und Blau.','',0,0,1);
+I[13][3][1]=new Array('Ein Bayer-Sensor ist ein Farbbild-Sensor, bei welchen in rechteckigen Bl\u00F6cken von 4 Pixeln vor jedem Pixel jeweils ein Farbfilter positioniert ist.','',1,100,1);
+I[13][3][2]=new Array('Ein Bayer-Sensor ist ein Farbsensor, welcher speziell f\u00FCr die Chemie-Industrie zur Qualit\u00E4tskontrolle bei der Herstellung von Farben entwickelt wurde.','',0,0,1);
+I[13][3][3]=new Array('Das Verh\u00E4ltnis der Farbempfindlichkeit der Farben Rot : Gr\u00FCn : Blau ist bei einem Bayer-Sensor 1 : 2 : 1.','',1,100,1);
+I[14]=new Array();I[14][0]=100;
+I[14][1]='';
+I[14][2]='3';
+I[14][3]=new Array();
+I[14][3][0]=new Array('A/D-Wandler','',1,100,1);
+I[14][3][1]=new Array('VGA-Schnittstelle','',0,0,1);
+I[14][3][2]=new Array('Objektiv','',1,100,1);
+I[14][3][3]=new Array('Integrierte Beleuchtung,','',0,0,1);
+I[14][3][4]=new Array('Mikroprozessor bzw. Microcontroller f\u00FCr Bildverarbeitungsalgorithmen','',0,0,1);
+I[15]=new Array();I[15][0]=100;
+I[15][1]='';
+I[15][2]='3';
+I[15][3]=new Array();
+I[15][3][0]=new Array('Verh\u00E4ltnis von maximal detektierbarer Menge einer strahlungsphysikalischen Gr\u00F6\u00DFe zur kleinsten noch detektierbaren Menge,','',0,0,1);
+I[15][3][1]=new Array('\u00C4nderung des Ausgangssignals, bezogen auf die \u00C4nderung der strahlungsphysikalischen Eingangsgr\u00F6\u00DFe,','',1,100,1);
+I[15][3][2]=new Array('kleinste noch detektierbare Menge einer strahlungsphysikalischen Gr\u00F6\u00DFe,','',0,0,1);
+I[15][3][3]=new Array('Verh\u00E4ltnis von gr\u00F6\u00DFtem Ausgangssignal zur kleinsten noch detektierbaren Menge einer Strahlungsgr\u00F6\u00DFe','',0,0,1);
+I[16]=new Array();I[16][0]=100;
+I[16][1]='';
+I[16][2]='3';
+I[16][3]=new Array();
+I[16][3][0]=new Array('Verh\u00E4ltnis von maximal detektierbarer Menge einer Strahlungsgr\u00F6\u00DFe zur kleinsten noch detektierbaren Menge,','',0,0,1);
+I[16][3][1]=new Array('\u00C4nderung des Ausgangssignals, bezogen auf die \u00C4nderung der strahlungsphysikalischen Eingangsgr\u00F6\u00DFe,','',0,0,1);
+I[16][3][2]=new Array('kleinste noch detektierbare Menge einer strahlungsphysikalische oder lichttechnischen Gr\u00F6\u00DFe,','',1,100,1);
+I[16][3][3]=new Array('Ausgangssignal des Detektors, welches bei der kleinsten noch detektierbaren Strahlungsmenge auftritt','',0,0,1);
+I[17]=new Array();I[17][0]=100;
+I[17][1]='';
+I[17][2]='3';
+I[17][3]=new Array();
+I[17][3][0]=new Array('als Spannungssignal \u00FCber elektrische Leitungen','',0,0,1);
+I[17][3][1]=new Array('mittels optischer \u00DCbertragung,','',0,0,1);
+I[17][3][2]=new Array('Verschiebung von Ladungspaketen nach dem Ladungskopplungsprinzip','',1,100,1);
+I[17][3][3]=new Array('als Stromsignal, die Pixel fungieren hierbei als Stromquellen,','',0,0,1);
+I[17][3][4]=new Array('als Stromsignal; die Ladungen werden dabei mit Hilfe des Ladungskopplungsprinzips zun\u00E4chst zu jedem Pixel geh\u00F6rigen Ladungsverst\u00E4rker transportiert, welchem wiederum eine Stromquelle nachgeschaltet ist.','',0,0,1);
+I[18]=new Array();I[18][0]=100;
+I[18][1]='';
+I[18][2]='3';
+I[18][3]=new Array();
+I[18][3][0]=new Array('Bei telezentrischen Messobjektiven ist das Verh\u00E4ltnis von Objekt- zur Bildweite konstant.','',0,0,1);
+I[18][3][1]=new Array('Telezentrische Messobjektive sind spezielle Mikroskopobjektive zur Vermessung von mikroskopisch kleinen Bauteilen.','',0,0,1);
+I[18][3][2]=new Array('Bei telezentrischen Messobjektiven ist der Abbildungsma\u00DFstab weitestgehend unabh\u00E4ngig vom Objektabstand.','',1,100,1);
+I[18][3][3]=new Array('Telezentrische Messobjektive sind im Bereich der optischen Achse besonders lichtstark.','',0,0,1);
+I[19]=new Array();I[19][0]=100;
+I[19][1]='';
+I[19][2]='3';
+I[19][3]=new Array();
+I[19][3][0]=new Array('Die K\u00F6hlersche Beleuchtung ist ein Streifenprojektionsverfahren zur dreidimensionalen Erfassung von Oberfl\u00E4chenprofilen.','',0,0,1);
+I[19][3][1]=new Array('Die K\u00F6hlersche Beleuchtung ist ein speziell f\u00FCr Mikroskopanwendungen entwikkeltes Beleuchtungsverfahren.','',1,100,1);
+I[19][3][2]=new Array('Bei der K\u00F6hlerschen Beleuchtung wird eine sehr schmalbandige Lichtquelle mit hohem Koh\u00E4renzgrad verwendet.','',0,0,1);
+I[19][3][3]=new Array('Bei der K\u00F6hlerschen Beleuchtung lassen sich die Gr\u00F6\u00DFe des ausgeleuchteten Feldes und die Beleuchtungsapertur unabh\u00E4ngig voneinander einstellen.','',1,100,1);
+I[20]=new Array();I[20][0]=100;
+I[20][1]='';
+I[20][2]='3';
+I[20][3]=new Array();
+I[20][3][0]=new Array('L\u00E4nge eines objektseitigen Bereiches der optischen Achse, in dem zwei Punkte optisch gerade noch aufgel\u00F6st werden k\u00F6nnen,','',0,0,1);
+I[20][3][1]=new Array('L\u00E4nge eines objektseitigen Bereiches auf der optischen Achse, in dem ein Punkt auf einen Unsch\u00E4rfekreis maximal in Gr\u00F6\u00DFe der Pixelabmessungen auf die Bildseite abgebildet wird,','',1,100,1);
+I[20][3][2]=new Array('L\u00E4nge eines bildseitigen Bereiches auf der optischen Achse, in dem ein Punkt auf einen Unsch\u00E4rfekreis maximal in Gr\u00F6\u00DFe der Pixelabmessungen auf die Bildseite abgebildet wird,','',0,0,1);
+I[20][3][3]=new Array('L\u00E4nge eines Bereiches entlang der optischen Achse, innerhalb dessen zwei Objekte mit dem gleichen Abbildungsma\u00DFstab abgebildet werden.','',0,0,1);
+I[21]=new Array();I[21][0]=100;
+I[21][1]='';
+I[21][2]='3';
+I[21][3]=new Array();
+I[21][3][0]=new Array('Frequenzen elektromagnetischer Wellenl\u00E4ngen, welche nur an bestimmten Orten auftreten (z. B. durch konstante Wellenl\u00E4ngen farbiger Objekte','',0,0,1);
+I[21][3][1]=new Array('zeitliche Schwankungen der Helligkeitsinformation eines festen Pixels von Bildaufnehmern bei Bildfolgen','',0,0,1);
+I[21][3][2]=new Array('Anzahlen von Schwingungen bzw. Perioden pro L\u00E4ngeneinheit,','',1,100,1);
+I[21][3][3]=new Array('zeitliche Schwankungen bestimmter geometrischer Objektkenngr\u00F6\u00DFen (Schwerpunkt, L\u00E4nge, Fl\u00E4che usw.) bei Bildern von elastischen Objekten.','',0,0,1);
+I[22]=new Array();I[22][0]=100;
+I[22][1]='';
+I[22][2]='3';
+I[22][3]=new Array();
+I[22][3][0]=new Array('Vort\u00E4uschung niederfrequenter, im Originalsignal nicht vorhandener Signalanteile,','',1,100,1);
+I[22][3][1]=new Array('Infolge Aliasings werden Signale mit Frequenzen gr\u00F6\u00DFer als das Doppelte der Abtastfrequenz vorget\u00E4uscht, welche im urspr\u00FCnglichen Signal nicht enthalten sind.','',0,0,1);
+I[22][3][2]=new Array('Unter Aliasing versteht man fehlerhafte Bildsignale infolge falscher Belichtung.','',0,0,1);
+I[22][3][3]=new Array('Aliasing entsteht durch fehlerbehaftete Rekonstruktion von Signalen infolge Verletzung des Abtasttheorems (Unterabtastung, \u201Eundersampling\u201E).','',1,100,1);
+I[23]=new Array();I[23][0]=100;
+I[23][1]='';
+I[23][2]='3';
+I[23][3]=new Array();
+I[23][3][0]=new Array('Es k\u00F6nnen nur Signale fehlerfrei rekonstruiert werden, deren kleinste im Ortsfrequenzspektrum auftretende Periodendauer gr\u00F6\u00DFer ist als das doppelte Pixelraster, zzgl. Eines Sicherheitsfaktors.','',1,100,1);
+I[23][3][1]=new Array('Es k\u00F6nnen nur Signale fehlerfrei rekonstruiert werden, deren kleinste im Ortsfrequenzspektrum auftretende Periodendauer gr\u00F6\u00DFer ist als das halbe Pixelraster, zzgl. Eines Sicherheitsfaktors.','',0,0,1);
+I[23][3][2]=new Array('Da Halbleiterbildsensoren ein integrales Signal \u00FCber die Pixelfl\u00E4che bilden, was einem Tiefpassverhalten entspricht, er\u00FCbrigt sich in vielen F\u00E4llen der Einsatz von Anti-Aliasing-Filtern','',1,100,1);
+I[23][3][3]=new Array('Die Ortsaufl\u00F6sung ist zwar grunds\u00E4tzlich durch das Pixelraster begrenzt, kann jedoch mittels Subpixelalgorithmen erheblich gesteigert werden.','',0,0,1);
+I[24]=new Array();I[24][0]=100;
+I[24][1]='';
+I[24][2]='3';
+I[24][3]=new Array();
+I[24][3][0]=new Array('Die Ortsaufl\u00F6sung ist zun\u00E4chst durch das Pixelraster begrenzt, kann jedoch durch Subpixelalgorithmen gesteigert werden.','',0,0,1);
+I[24][3][1]=new Array('Die Messgenauigkeit bei Aufgaben der L\u00E4ngenmesstechnik (L\u00E4nge, Abstand, Position) ist durch das Pixelraster begrenzt und kann grunds\u00E4tzlich nicht weiter gesteigert werden.','',0,0,1);
+I[24][3][2]=new Array('Die Messgenauigkeit bei Aufgaben der L\u00E4ngenmesstechnik (L\u00E4nge, Abstand, Objekt-, Kantenposition) ist zun\u00E4chst durch das Pixelraster begrenzt, kann aber durch Subpixelalgorithmen gesteigert werden.','',1,100,1);
+I[24][3][3]=new Array('Das Pixelraster hat f\u00FCr die Messgenauigkeit bzw. Ortsaufl\u00F6sung keine Bedeutung.','',0,0,1);
+I[25]=new Array();I[25][0]=100;
+I[25][1]='';
+I[25][2]='3';
+I[25][3]=new Array();
+I[25][3][0]=new Array('die Anzahl unterschiedlicher Merkmale f\u00FCr eine Klassifikation,','',0,0,1);
+I[25][3][1]=new Array('Der maximale Grauwert im Bild im Verh\u00E4ltnis zum Rauschen des Bildsignals,','',0,0,1);
+I[25][3][2]=new Array('Die Anzahl verschiedener Grauwerte des Bildes,','',1,100,1);
+I[25][3][3]=new Array('Das Verh\u00E4ltnis vom maximalen zum minimalen Grauwert im Bild','',0,0,1);
+I[26]=new Array();I[26][0]=100;
+I[26][1]='';
+I[26][2]='3';
+I[26][3]=new Array();
+I[26][3][0]=new Array('von der Anzahl verschiedener Grauwerte des Bildes,','',0,0,1);
+I[26][3][1]=new Array('vom Verh\u00E4ltnis vom maximalen Grauwert im Bild zum Bildrauschen,','',0,0,1);
+I[26][3][2]=new Array('vom Verh\u00E4ltnis der Bestrahlungsst\u00E4rke zur Strahldichte,','',0,0,1);
+I[26][3][3]=new Array('vom maximalen zum minimalen Grauwert im Bild','',1,100,1);
+I[27]=new Array();I[27][0]=100;
+I[27][1]='';
+I[27][2]='3';
+I[27][3]=new Array();
+I[27][3][0]=new Array('Anpassung des Histogramms an eine allgemeine Referenzfunktiom','',0,0,1);
+I[27][3][1]=new Array('Anpassung des kumulativen Histogramms an eine lineare Funktion,','',1,100,1);
+I[27][3][2]=new Array('Umwandlung eines gegebenen Grauwerthistogramms in ein gleichverteiltes Histogramm,','',0,0,1);
+I[27][3][3]=new Array('Austausch der Grauwerte des Bildes gegen die H\u00E4ufigkeit ihres Auftretens,','',1,100,1);
+I[27][3][4]=new Array('Anpassung des Grauwerthistogramms an eine lineare Funktion','',0,0,1);
+I[28]=new Array();I[28][0]=100;
+I[28][1]='';
+I[28][2]='3';
+I[28][3]=new Array();
+I[28][3][0]=new Array('Austausch der Werte der H\u00E4ufigkeit der Grauwerte eines Bildes gegen die kumulierte H\u00E4ufigkeit,','',0,0,1);
+I[28][3][1]=new Array('Umwandlung eines gegebenen Grauwerthistogramms in ein vorgegebenes Histogramm,','',0,0,1);
+I[28][3][2]=new Array('Anpassung eines kumulierten Histogramms an ein vorgegebenes Referenzhistogramm','',1,100,1);
+I[28][3][3]=new Array('Anpassung des kumulativen Grauwerthistogramms an eine lineare Funktion,','',0,0,1);
+I[28][3][4]=new Array('Austausch der Grauwerte des Bildes gegen die H\u00E4ufigkeit ihres Auftretens,','',0,0,1);
+I[29]=new Array();I[29][0]=100;
+I[29][1]='';
+I[29][2]='3';
+I[29][3]=new Array();
+I[29][3][0]=new Array('Der Medianfilter bildet den lokalen Mittelwert \u00FCber die Helligkeitsverteilung.','',0,0,1);
+I[29][3][1]=new Array('Auflistung aller (auch mehrfach auftretender) Werte der Filtermaske der Gr\u00F6\u00DFe nach, das Ergebnis der Filterung ist der Wertes an der Mittenposition der Liste','',1,100,1);
+I[29][3][2]=new Array('Der Medianfilter gibt den mittleren Wert in der Liste der nach aufsteigenden Zeilen- und Spaltenindizes der Pixel sortierten Amplitudenwerte als Ergebnis zur\u00FCck.','',0,0,1);
+I[29][3][3]=new Array('Auflistung aller (auch mehrfach auftretender) Werte der Filtermaske der Gr\u00F6\u00DFe nach, das Ergebnis der Filterung ist der gleitende Mittelwert \u00FCber diese Liste.','',0,0,1);
+I[30]=new Array();I[30][0]=100;
+I[30][1]='';
+I[30][2]='3';
+I[30][3]=new Array();
+I[30][3][0]=new Array('Der Sobel-Operator ist ein Kantenfilter, welcher in alle Richtungen empfindlich ist.','',0,0,1);
+I[30][3][1]=new Array('Der Sobel-Operator ist ein Kantenfilter mit Vorzugsrichtung. Senkrecht zur Vorzugsrichtung ist er als Gauss-Filter ausgelegt.','',1,100,1);
+I[30][3][2]=new Array('Der Sobel-Operator ist ein Kantenfilter mit Vorzugsrichtung. Senkrecht zur Vorzugsrichtung ist er als einfacher Mittelwertfilter ausgelegt.','',0,0,1);
+I[30][3][3]=new Array('Der Sobel-Operator ist ein modifizierter Mittelwertfilter mit Wichtung der Amplitudenwerte in Abh\u00E4ngigkeit von der Entfernung zum betrachteten Pixel.','',0,0,1);
+I[31]=new Array();I[31][0]=100;
+I[31][1]='';
+I[31][2]='3';
+I[31][3]=new Array();
+I[31][3][0]=new Array('Der Prewitt-Operator ist ein Kantenfilter, welcher in alle Richtungen empfindlich ist.','',0,0,1);
+I[31][3][1]=new Array('Der Prewitt-Operator ist ein Kantenfilter mit Vorzugsrichtung. Senkrecht zur Vorzugsrichtung ist er als Gauss-Filter ausgelegt.','',0,0,1);
+I[31][3][2]=new Array('Der Prewitt-Operator ist ein Kantenfilter mit Vorzugsrichtung. Senkrecht zur Vorzugsrichtung ist er als einfacher Mittelwertfilter ausgelegt.','',1,100,1);
+I[31][3][3]=new Array('Der Prewitt-Operator ist ein modifizierter Mittelwertfilter mit Wichtung der Amplitudenwerte in Abh\u00E4ngigkeit von der Entfernung zum betrachteten Pixel.','',0,0,1);
+I[32]=new Array();I[32][0]=100;
+I[32][1]='';
+I[32][2]='3';
+I[32][3]=new Array();
+I[32][3][0]=new Array('Die Differenz zwischen der gr\u00F6\u00DFten und kleinsten Pixelamplitude entlang des Gradienten der Kante,','',0,0,1);
+I[32][3][1]=new Array('Der h\u00F6chste Gradient in der lokalen Umgebung einer Kante,','',0,0,1);
+I[32][3][2]=new Array('Die Wurzel aus der Quadratsumme der Gradienten in waagerechter und senkrechter Richtung,','',1,100,1);
+I[32][3][3]=new Array('Die Wurzel aus der Quadratsumme der senkrechten und waagerechten Projektionen der Strecke entlang des Gradienten der Kante,','',0,0,1);
+I[32][3][4]=new Array('Die L\u00E4nge der ansteigenden Strecke entlang des Gradienten','',0,0,1);
+I[33]=new Array();I[33][0]=100;
+I[33][1]='';
+I[33][2]='3';
+I[33][3]=new Array();
+I[33][3][0]=new Array('die 2. Ableitung in Verbindung mit dem Gauss-Operator','',0,0,1);
+I[33][3][1]=new Array('die 2. Ableitung,','',1,100,1);
+I[33][3][2]=new Array('die 2. Ableitung in einer Richtung in Verbindung mit einfachem Mittelwertfilter senkrecht zu dieser Richtung,','',0,0,1);
+I[33][3][3]=new Array('die 2. Ableitung in Verbindung mit einem Median-Filter','',0,0,1);
+I[34]=new Array();I[34][0]=100;
+I[34][1]='';
+I[34][2]='3';
+I[34][3]=new Array();
+I[34][3][0]=new Array('Multiplikation des Bildes mit der \u00DCbertragungsfunktion des Filters, Fouriertransformation des gefilterten Bildes in den Ortsfrequenzraum, Faltung mit der \u00DCbertragungsfunktion, R\u00FCcktransformation','',0,0,1);
+I[34][3][1]=new Array('Fouriertransformation des Bildes in den Ortsfrequenzraum, Multiplikation mit der \u00DCbertragungsfunktion des Filters, R\u00FCcktransformation,','',1,100,1);
+I[34][3][2]=new Array('Faltung des Bildes mit der \u00DCbertragungsfunktion des Filters,','',0,0,1);
+I[34][3][3]=new Array('Faltung des Bildes mit der Gewichtsfunktion (Filterkern) des Filters,','',1,100,1);
+I[34][3][4]=new Array('Faltung des Bildes mit der Gewichtsfunktion, Fouriertransformation des gefilterten Bildes, Multiplikation mit der \u00DCbertragungsfunktion im Ortsfrequenzraum, R\u00FCcktransformation','',0,0,1);
+I[35]=new Array();I[35][0]=100;
+I[35][1]='';
+I[35][2]='3';
+I[35][3]=new Array();
+I[35][3][0]=new Array('Vertauschen der Quadranten des Bildes der DFT, sodass eine zentralsymmetrische Abbildung entsteht,','',1,100,1);
+I[35][3][1]=new Array('Vertauschen der Quadranten des Bildes der DFT, sodass der Gleichanteil des Spektrums sowie die Beitr\u00E4ge kleinerer Frequenzen in der Bildmitte dargestellt werden,','',1,100,1);
+I[35][3][2]=new Array('Vertauschen der Quadranten des Bildes der DFT, sodass die Beitr\u00E4ge hoher Frequenzen in der Bildmitte dargestellt werden,','',0,0,1);
+I[35][3][3]=new Array('Vertauschen der Quadranten des Bildes der DFT, sodass die h\u00F6chsten Anteile des Spektrums in der Mitte des Diagramms dargestellt werden','',0,0,1);
+I[36]=new Array();I[36][0]=100;
+I[36][1]='';
+I[36][2]='3';
+I[36][3]=new Array();
+I[36][3][0]=new Array('Verh\u00E4ltnis vom Umfangsquadrat zur Fl\u00E4che','',1,100,1);
+I[36][3][1]=new Array('Verh\u00E4ltnis von Umfang zur Fl\u00E4che','',0,0,1);
+I[36][3][2]=new Array('Produkt aus gr\u00F6\u00DFter Ausdehnung durch den Fl\u00E4chenschwerpunkt und Umfang,','',0,0,1);
+I[36][3][3]=new Array('Verh\u00E4ltnis aus der Fl\u00E4che des Objektes und der Fl\u00E4che eines Kreises, welcher mit der Methode der kleinsten Fehlerquadratsumme durch die \u00E4u\u00DFere Kontur gebildet wird,','',0,0,1);
+I[36][3][4]=new Array('Verh\u00E4ltnis aus der Fl\u00E4che des Objektes und der Fl\u00E4che des \u00E4u\u00DFeren Umkreises','',0,0,1);
+I[37]=new Array();I[37][0]=100;
+I[37][1]='';
+I[37][2]='3';
+I[37][3]=new Array();
+I[37][3][0]=new Array('Laplace-Operator,','',0,0,1);
+I[37][3][1]=new Array('Fourier-Descriptor,','',1,100,1);
+I[37][3][2]=new Array('Zentrales Moment erster Ordnung,','',0,0,1);
+I[37][3][3]=new Array('Randcode nach Freeman,','',1,100,1);
+I[37][3][4]=new Array('Konturl\u00E4nge','',0,0,1);
+I[38]=new Array();I[38][0]=100;
+I[38][1]='';
+I[38][2]='3';
+I[38][3]=new Array();
+I[38][3][0]=new Array('Mathematischer Raum mit einer oder mehreren (n) Dimensionen, in welchem sich ein- bzw. n-dimensionale Merkmalsvektoren darstellen lassen,','',1,100,1);
+I[38][3][1]=new Array('Mathematischer Raum zur Darstellung r\u00E4umlicher (dreidimensionaler) Merkmale,','',0,0,1);
+I[38][3][2]=new Array('Speicherbereich in einem Computer zur Ablage quantifizierbarer Merkmale,','',0,0,1);
+I[38][3][3]=new Array('Mehr oder weniger gut abgegrenztes Gebiet innerhalb eines Merkmalsraumes, welches alle bzw. eine ausreichend gro\u00DFe Anzahl aller m\u00F6glichen Merkmalsvektoren einer Objektklasse ohne \u00DCberschneidungen zu anderen Klassen enth\u00E4lt','',0,0,1);
+I[39]=new Array();I[39][0]=100;
+I[39][1]='';
+I[39][2]='3';
+I[39][3]=new Array();
+I[39][3][0]=new Array('Mehr oder weniger gut abgegrenztes Gebiet innerhalb eines Merkmalsraumes, welches alle bzw. eine ausreichend gro\u00DFe Anzahl aller m\u00F6glichen Merkmalsvektoren einer Objektklasse ohne \u00DCberschneidungen zu anderen Klassen enth\u00E4lt,','',1,100,1);
+I[39][3][1]=new Array('Anzahl von Klassen, deren Merkmalsvektoren dicht beieinander liegen,','',0,0,1);
+I[39][3][2]=new Array('Zusammenh\u00E4ngende Struktur innerhalb eines digitalen Bildes,','',0,0,1);
+I[39][3][3]=new Array('Gebiet innerhalb eines digitalen Bildes mit Objekth\u00E4ufungen','',0,0,1);
+I[39][3][4]=new Array('Gebiet innerhalb eines digitalen Bildes mit H\u00E4ufungen von Objekten gleicher Klassen','',0,0,1);
+I[40]=new Array();I[40][0]=100;
+I[40][1]='';
+I[40][2]='3';
+I[40][3]=new Array();
+I[40][3][0]=new Array('n-Tupel von Zahlen einer Objektklasse im Sinne der Mustererkennung, wobei jede Zahl eine f\u00FCr die Klasse typische Merkmalsgr\u00F6\u00DFe (Mittelwert, Maximalwert usw.) repr\u00E4sentiert,','',1,100,1);
+I[40][3][1]=new Array('Vektor, welcher durch Verbindung von 2 Merkmalsvektoren im Merkmalsraum gebildet wird,','',0,0,1);
+I[40][3][2]=new Array('Vektor, welcher durch die Verbindung der Schwerpunkte von 2 Clustern im Merkmalsraum gebildet wird,','',0,0,1);
+I[40][3][3]=new Array('Vektor, dessen Elemente sich aus den Koordinaten eines Punktes im Merkmalsraum ergeben, wobei die Koordinaten die Merkmale eines Objektes darstellen','',1,100,1);
+I[40][3][4]=new Array('n-Tupel von Zahlen, welche die Merkmale ausschlie\u00DFlich von Referenzobjekten enthalten','',0,0,1);
+I[41]=new Array();I[41][0]=100;
+I[41][1]='';
+I[41][2]='3';
+I[41][3]=new Array();
+I[41][3][0]=new Array('Anlegen von n Merkmalen als Adressen an einen n-dimensional organisierten Speicher; die Klasse ergibt sich aus dem entsprechenden Speicherinhalt,','',1,100,1);
+I[41][3][1]=new Array('Anlegen von n Merkmalen als Adressen an einen n-dimensional organisierten Speicher; der Speicherinhalt ist als Parameter an eine Routine zu \u00FCbergeben, welche die Klasse ermittelt und zur\u00FCckgibt,','',0,0,1);
+I[41][3][2]=new Array('Auf den Amplitudenwert jedes Pixels eines gefundenen Objekts ist zun\u00E4chst ein Punktoperator in Form einer Clipping-LUT anzuwenden. Anschlie\u00DFend kann die Klassifikation sehr eindeutig mit einem Parallel-Epiped-Klassifikator vorgenommen werden.','',0,0,1);
+I[41][3][3]=new Array('Aufruf einer Routine, welcher der Merkmalsvektor zu \u00FCbergeben ist. Die Routine gibt eine nat\u00FCrliche Zahl zur\u00FCck, welche wiederum als Adresse an einen eindimensionalen Speicher anzulegen ist. Der Speicherinhalt dieser Adresse entspricht der Klasse','',0,0,1);
+I[42]=new Array();I[42][0]=100;
+I[42][1]='';
+I[42][2]='3';
+I[42][3]=new Array();
+I[42][3][0]=new Array('Das Ma\u00DF f\u00FCr ein bedingtes Riskio,','',0,0,1);
+I[42][3][1]=new Array('eine Verlustmatrix','',0,0,1);
+I[42][3][2]=new Array('ein oder mehrere Merkmalsvektoren,','',1,100,1);
+I[42][3][3]=new Array('Clustergrenzen','',0,0,1);
+I[43]=new Array();I[43][0]=100;
+I[43][1]='';
+I[43][2]='3';
+I[43][3]=new Array();
+I[43][3][0]=new Array('Die Zugeh\u00F6rigkeit zu einer Klasse mit einem minimalen bedingten Risiko,','',0,0,1);
+I[43][3][1]=new Array('Die Wahrscheinlichkeit der Zugeh\u00F6rigkeit eines Objektes zu einer bestimmten Klasse in Abh\u00E4ngigkeit von der festgestellten Gr\u00F6\u00DFe eines oder mehrerer Merkmals des Objektes,','',1,100,1);
+I[43][3][2]=new Array('Die Wahrscheinlichkeit des Auftretens eines bestimmten Merkmals in einer Objektklasse','',0,0,1);
+I[43][3][3]=new Array('Die a priori-Wahrscheinlichkeit der Zugeh\u00F6rigkeit eines gefundenen Objektes zu einer bestimmten Klasse,','',0,0,1);
+I[43][3][4]=new Array('Die Wahrscheinlichkeit der Zugeh\u00F6rigkeit eines Objektes zu einer bestimmten Klasse in Abh\u00E4ngigkeit von der Klassenzugeh\u00F6rigkeit zuvor gefundener Objekte','',0,0,1);
+I[44]=new Array();I[44][0]=100;
+I[44][1]='';
+I[44][2]='3';
+I[44][3]=new Array();
+I[44][3][0]=new Array('Die Wahrscheinlichkeit f\u00FCr das Auftreten eines bestimmten Ereignisses bei einem Zufallsprozess,','',0,0,1);
+I[44][3][1]=new Array('Die Wahrscheinlichkeit der Zugeh\u00F6rigkeit eines gefundenen Objektes zu einer bestimmten Objektklasse,','',0,0,1);
+I[44][3][2]=new Array('Die Wahrscheinlichkeit der Ermittlung eines Merkmals bei einem Objekt einer beliebigen Klasse innerhalb einer definierten Menge von Klassen,','',1,100,1);
+I[44][3][3]=new Array('Die bedingte Wahrscheinlichkeit daf\u00FCr, dass ein ermittelter Merkmalswert zu einem Objekt einer bestimmten Klasse geh\u00F6rt','',0,0,1);
+I[45]=new Array();I[45][0]=100;
+I[45][1]='';
+I[45][2]='3';
+I[45][3]=new Array();
+I[45][3][0]=new Array('Die Wahrscheinlichkeit der Zugeh\u00F6rigkeit eines Objektes zu einer bestimmten Klasse in Abh\u00E4ngigkeit von der festgestellten Gr\u00F6\u00DFe eines oder mehrerer Merkmale des Objektes','',0,0,1);
+I[45][3][1]=new Array('eine Verlustmatrix','',0,0,1);
+I[45][3][2]=new Array('Ein bedingtes Risiko auf Basis der Ergebnisse des zuvor angewendeten MaximumLikelihood-Klassifikators,','',1,100,1);
+I[45][3][3]=new Array('Ein bedingtes Risiko auf Basis einer Verlustmatrix','',0,0,1);
+I[45][3][4]=new Array('Ein bedingtes Risiko auf Basis des euklidischen Abstandes zu einem Clusterschwerpunkt im Merkmalsraum','',0,0,1);
+
+
+function StartUp(){
+	RemoveBottomNavBarForIE();
+
+//If there's only one question, no need for question navigation controls
+	if (QsToShow < 2){
+		document.getElementById('QNav').style.display = 'none';
+	}
+	
+//Stash the instructions so they can be redisplayed
+	strInstructions = document.getElementById('InstructionsDiv').innerHTML;
+	
+
+	
+
+	
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions();
+	ClearTextBoxes();
+	CreateStatusArray();
+	
+
+	
+//Check search string for q parameter
+	if (document.location.search.length > 0){
+		if (ShuffleQs == false){
+			var JumpTo = parseInt(document.location.search.substring(1,document.location.search.length))-1;
+			if (JumpTo <= QsToShow){
+				ChangeQ(JumpTo);
+			}
+		}
+	}
+//Undocumented function added 10/12/2004
+	ShowSpecialReadingForQuestion();
+}
+
+function ShowHideQuestions(){
+	FuncBtnOut(document.getElementById('ShowMethodButton'));
+	document.getElementById('ShowMethodButton').style.display = 'none';
+	if (ShowingAllQuestions == false){
+		for (var i=0; i<QArray.length; i++){
+				QArray[i].style.display = '';
+			}
+		document.getElementById('Questions').style.listStyleType = 'decimal';
+		document.getElementById('OneByOneReadout').style.display = 'none';
+		document.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption;
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+				if (i != CurrQNum){
+					QArray[i].style.display = 'none';
+				}
+			}
+		document.getElementById('Questions').style.listStyleType = 'none';
+		document.getElementById('OneByOneReadout').style.display = '';
+		document.getElementById('ShowMethodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAllQuestions = false;	
+	}
+	document.getElementById('ShowMethodButton').style.display = 'inline';
+}
+
+function CreateStatusArray(){
+	var QNum, ANum;
+//For each item in the item array
+	for (QNum=0; QNum<I.length; QNum++){
+//Check if the question still exists (hasn't been nuked by showing a random selection)
+		if (document.getElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question not done yet
+			State[QNum][1] = new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen yet; when chosen, will store its position in the series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far
+			State[QNum][3] = 0; //incrementing percent-correct values of selected answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[QNum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null;
+		}
+	}
+}
+
+
+
+
+
+function CheckMultiSelAnswer(QNum){
+//bail if question doesn't exist or exercise finished
+	if ((State[QNum].length < 1)||(Finished == true)){return;}
+
+//Increment the tries for this question
+	State[QNum][2]++;
+	
+	var ShouldBeChecked;
+	var Matches = 0;
+	if (State[QNum][5].length > 0){State[QNum][5] += ' | ';}
+	
+//Check if there are any mismatches
+	Feedback = '';
+	var CheckBox = null;
+	for (var ANum=0; ANum<I[QNum][3].length; ANum++){
+		CheckBox = document.getElementById('Q_' + QNum + '_' + ANum + '_Chk');
+		if (CheckBox.checked == true){
+			State[QNum][5] += 'Y';
+		}
+		else{
+			State[QNum][5] += 'N';
+		}
+		ShouldBeChecked = (I[QNum][3][ANum][2] == 1);
+		if (ShouldBeChecked == CheckBox.checked){
+			Matches++;
+		}
+		else{
+			Feedback = I[QNum][3][ANum][1];
+		}
+	}
+//Add the hit readout
+	Feedback = Matches + ' / ' + I[QNum][3].length + '<br />' + Feedback;
+	if (Matches == I[QNum][3].length){
+//It's right
+		CalculateMultiSelQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		var QsDone = CheckQuestionsCompleted();
+		
+		if (ContinuousScoring == true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)||(Finished == true)){
+				Feedback += '<br />' + YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+			else{
+				WriteToInstructions(QsDone);
+			}
+		}
+	}
+	else{
+//It's wrong -- Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Finished == false){
+			WriteToInstructions(strInstructions);
+		}	
+	}
+		
+//Show the feedback
+	ShowMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();
+}
+
+function CalculateMultiSelQuestionScore(QNum){
+	var Tries = State[QNum][2];
+	var TotAns = State[QNum][1].length;
+	
+//Make sure it's not already complete
+	if (State[QNum][0] < 0){
+		State[QNum][0] = (TotAns - (Tries-1)) / TotAns;
+		if (State[QNum][0] < 0){
+			State[QNum][0] = 0;
+		}
+	}
+}
+
+
+
+function CalculateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0];
+				TotalScore += (I[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0, no questions so far have any value, so 
+//no penalty should be shown.
+		Score = 100; 
+	}
+}
+
+//New for 6.2.2.0
+function CheckQuestionsCompleted(){
+	if (ShowCompletedSoFar == false){return '';}
+	var QsCompleted = 0;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] >= 0){
+				QsCompleted++;
+			}
+		}
+	}
+//Fixes for 6.2.2.2
+	if (QsCompleted >= QArray.length){
+		return ExerciseCompleted;
+	}
+	else{
+		return CompletedSoFar + ' ' + QsCompleted + '/' + QArray.length + '.';
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		
+//New for 6.2.2.0
+		FB += '<br />' + ExerciseCompleted;
+		
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+
+
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingField</fieldlabelid><fielddata>' + State[QNum][5] + '</fielddata></field>';
+				}
+			}
+		}
+		Detail += '</fields></hpnetresult>';
+		setTimeout('Finish()', SubmissionTimeout);
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+//-->
+
+//]]>
+
+</script>
+
+
+</head>
+
+<body onload="StartUp()" id="TheBody" >
+
+<!-- BeginTopNavButtons -->
+
+
+<div class="NavButtonBar" id="TopNavBar">
+
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndTopNavButtons -->
+
+<div class="Titles">
+	<h2 class="ExerciseTitle">DBV</h2>
+
+	<h3 class="ExerciseSubtitle">Quiz</h3>
+
+
+
+</div>
+
+<div id="InstructionsDiv" class="StdDiv">
+	<div id="Instructions"></div>
+</div>
+
+
+
+
+<div id="MainDiv" class="StdDiv">
+ 
+<div id="QNav" class="QuestionNavigation">
+
+<p style="text-align: right;">
+<button id="ShowMethodButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ShowHideQuestions(); return false;">Show all questions</button>
+</p>
+
+<div id="OneByOneReadout">
+<button id="PrevQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(-1); return false;">&lt;=</button>
+
+<span id="QNumReadout" class="QNum">&nbsp;</span>
+
+<button id="NextQButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(this)" onclick="ChangeQ(1); return false;">=&gt;</button>
+<br />
+</div>
+
+</div>
+ 
+<ol class="QuizQuestions" id="Questions">
+<li class="QuizQuestion" id="Q_0" style="display: none;"><div class="QuestionText">1.1 Welche Aussagen bez&#x00FC;glich der Bildbearbeitung sind zutreffend?</div><ol class="MSelAnswers"><li id="Q_0_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_0_0_Chk" class="MSelCheckbox" />Die Bildbearbeitung dient bei der Bildvorverarbeitung vor allem zum Festlegen<br />von ROI&#x2019;s und zur Trennung von Objekten und Hintergrund.</div></form></li><li id="Q_0_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_0_1_Chk" class="MSelCheckbox" />Bei der Bildbearbeitung werden einige wenige markante Merkmale berechnet und<br />ausgegeben.</div></form></li><li id="Q_0_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_0_2_Chk" class="MSelCheckbox" />Die Bildbearbeitung dient zur Modifikation von Bildern z. B. zur Hervorhebung<br />von Details, zur Kontrastverbesserung oder zu &#x00C4;nderungen unter &#x00E4;sthetisch-k&#x00FC;nstlerischen<br />Gesichtspunkten usw.. Das Ergebnis ist wiederum ein Bild.</div></form></li><li id="Q_0_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_0_3_Chk" class="MSelCheckbox" />Die Bildbearbeitung findet ausschlie&#x00DF;lich im Bereich der Hobby-Fotografie<br />Anwendung und hat nichts mit der Bildverarbeitung zu tun.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(0)">Check</button></li>
+<li class="QuizQuestion" id="Q_1" style="display: none;"><div class="QuestionText">1.2 Was versteht man in der Bildverarbeitung unter einer Top-Down-Strategie?</div><ol class="MSelAnswers"><li id="Q_1_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_1_0_Chk" class="MSelCheckbox" />Durchsuchung eines Bildes nach markanten Strukturen mit der Suchrichtung von<br />oben nach unten,</div></form></li><li id="Q_1_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_1_1_Chk" class="MSelCheckbox" />Durchsuchung eines Bildes nach Strukturmustern und anschlie&#x00DF;ende Zuordnung<br />der gefundenen Strukturen zu Objektklassen,</div></form></li><li id="Q_1_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_1_2_Chk" class="MSelCheckbox" />Vorgabe eines Referenzmusters und Durchsuchung des Bildes nach &#x00FC;bereinstimmenden<br />Mustern,</div></form></li><li id="Q_1_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_1_3_Chk" class="MSelCheckbox" />Durchsuchung eines Bildes nach Objekten von Klassen h&#x00F6;chster Ordnung, danach<br />innerhalb dieser Objekte Suche nach Objekten n&#x00E4;chst niederer Ordnung, Wiederholung<br />bis zur Klasse niedrigster Ordnung</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(1)">Check</button></li>
+<li class="QuizQuestion" id="Q_2" style="display: none;"><div class="QuestionText">1.3 Was versteht man in der Bildverarbeitung unter einer Bottom-Up-Strategie?</div><ol class="MSelAnswers"><li id="Q_2_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_2_0_Chk" class="MSelCheckbox" />Durchsuchung eines Bildes nach markanten Strukturen mit der Suchrichtung von<br />unten nach oben,</div></form></li><li id="Q_2_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_2_1_Chk" class="MSelCheckbox" />Durchsuchung eines Bildes nach Strukturmustern und anschlie&#x00DF;ende Zuordnung<br />der gefundenen Strukturen zu Objektklassen,</div></form></li><li id="Q_2_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_2_2_Chk" class="MSelCheckbox" />Vorgabe eines Referenzmusters und Durchsuchung des Bildes nach &#x00FC;bereinstimmenden<br />Mustern,</div></form></li><li id="Q_2_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_2_3_Chk" class="MSelCheckbox" />Durchsuchung eines Bildes nach Objekten von Klassen niedrigster Ordnung, danach<br />Zusammenfassen dieser Objekte und Zuweisung zu n&#x00E4;chst niederer Ordnung, Wiederholung<br />bis zur Klasse h&#x00F6;chster Ordnung</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(2)">Check</button></li>
+<li class="QuizQuestion" id="Q_3" style="display: none;"><div class="QuestionText">1.4 Welchem Ziel dient die Invertierung von Operatoren, welche die Bildaufnahme<br />modellieren? </div><ol class="MSelAnswers"><li id="Q_3_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_3_0_Chk" class="MSelCheckbox" />der Invertierung der aufgenommenen Grauwerte,</div></form></li><li id="Q_3_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_3_1_Chk" class="MSelCheckbox" />der Korrektur von Fehlern bei der Bildaufnahme,</div></form></li><li id="Q_3_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_3_2_Chk" class="MSelCheckbox" />der mathematischen Nachbildung des Prozesses der Bildaufnahme</div></form></li><li id="Q_3_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_3_3_Chk" class="MSelCheckbox" />Der Hervorhebung markanter Strukturen zum Zwecke der sp&#x00E4;teren Klassifizierung</div></form></li><li id="Q_3_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_3_4_Chk" class="MSelCheckbox" />Der Bildrestauration</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(3)">Check</button></li>
+<li class="QuizQuestion" id="Q_4" style="display: none;"><div class="QuestionText">3.1 Die geometrische Optik l&#x00E4;sst sich folgenderma&#x00DF;en charakterisieren:</div><ol class="MSelAnswers"><li id="Q_4_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_4_0_Chk" class="MSelCheckbox" />Sie wird ausschlie&#x00DF;lich durch Strahlen beschrieben, welche sich geradlinig<br />ausbreiten bzw. an Grenzfl&#x00E4;chen gebrochen oder reflektiert werden. Die<br />Welleneigenschaften des Lichts werden vernachl&#x00E4;ssigt.</div></form></li><li id="Q_4_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_4_1_Chk" class="MSelCheckbox" />Ber&#x00FC;cksichtigung ausschlie&#x00DF;lich von geradlinigen Strahlen, welche an Grenzfl&#x00E4;chen<br />gebeugt werden,</div></form></li><li id="Q_4_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_4_2_Chk" class="MSelCheckbox" />Anwendung der Strahlenoptik ausschlie&#x00DF;lich auf sph&#x00E4;rische Grenzfl&#x00E4;chen</div></form></li><li id="Q_4_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_4_3_Chk" class="MSelCheckbox" />Grundlage f&#x00FC;r die Berechnung von Strahlenverl&#x00E4;ufen in der geometrischen Optik<br />sind das Brechungs- bzw. Reflexionsgesetz; welches auf brechende bzw. reflektierende<br />Grenzfl&#x00E4;chen angewendet wird</div></form></li><li id="Q_4_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_4_4_Chk" class="MSelCheckbox" />Anwendung der Kleinwinkeln&#x00E4;herung auf das Reflexions- und Brechungsgesetz</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(4)">Check</button></li>
+<li class="QuizQuestion" id="Q_5" style="display: none;"><div class="QuestionText">3.2 Was versteht man unter &#x201E;Paraxialoptik&#x201C;?</div><ol class="MSelAnswers"><li id="Q_5_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_5_0_Chk" class="MSelCheckbox" />Vereinfachung der Strahlenoptik durch Anwendung der Kleinwinkeln&#x00E4;herung<br />auf Strahlen mit kleinem Einfallswinkel,</div></form></li><li id="Q_5_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_5_1_Chk" class="MSelCheckbox" />Beugung an sph&#x00E4;rischen Grenzfl&#x00E4;chen und Geradengleichungen,</div></form></li><li id="Q_5_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_5_2_Chk" class="MSelCheckbox" />Beugung an &#x00D6;ffnungs- und Feldblenden,</div></form></li><li id="Q_5_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_5_3_Chk" class="MSelCheckbox" />Annahme ausschlie&#x00DF;lich von Parallelstrahlen,</div></form></li><li id="Q_5_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_5_4_Chk" class="MSelCheckbox" />Die Paraxialoptik ist identisch mit der geometrischen Optik.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(5)">Check</button></li>
+<li class="QuizQuestion" id="Q_6" style="display: none;"><div class="QuestionText">3.3 Wie lassen sich Hauptebenen charakterisieren?</div><ol class="MSelAnswers"><li id="Q_6_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_6_0_Chk" class="MSelCheckbox" />Hauptebenen sind die Eintritts- und die Austrittsebenen optischer Systeme.</div></form></li><li id="Q_6_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_6_1_Chk" class="MSelCheckbox" />Hauptebenen sind &#x00E4;quivalente Orte der Lichtbeugung in optisch abbildenden<br />Systemen.</div></form></li><li id="Q_6_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_6_2_Chk" class="MSelCheckbox" />Hauptebenen sind &#x00E4;quivalente Orte der Lichtbrechung in optisch abbildenden<br />Systemen.</div></form></li><li id="Q_6_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_6_3_Chk" class="MSelCheckbox" />Hauptebenen sind identisch mit der objekt- und bildseitigen Brennebene.</div></form></li><li id="Q_6_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_6_4_Chk" class="MSelCheckbox" />Mit Hilfe der Hauptebenen und der Brennweiten lassen sich die Strahleng&#x00E4;nge<br />von optisch abbildenden Systemen n&#x00E4;herungsweise berechnen bzw.<br />konstruieren.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(6)">Check</button></li>
+<li class="QuizQuestion" id="Q_7" style="display: none;"><div class="QuestionText">3.4 Wodurch sind &#x00D6;ffnungsblenden charakterisiert</div><ol class="MSelAnswers"><li id="Q_7_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_7_0_Chk" class="MSelCheckbox" />&#x00D6;ffnungsblenden grenzen das Bildfeld ein, welches durch das optische System<br />&#x00FC;bertragen und abgebildet wird.</div></form></li><li id="Q_7_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_7_1_Chk" class="MSelCheckbox" />Die &#x00D6;ffnungsblende hat Einfluss auf den &#x00D6;ffnungswinkel und die numerische<br />Apertur eines Objektivs</div></form></li><li id="Q_7_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_7_2_Chk" class="MSelCheckbox" />Die &#x00D6;ffnungsblende ist grunds&#x00E4;tzlich identisch mit der Eintrittspupille eines Systems.</div></form></li><li id="Q_7_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_7_3_Chk" class="MSelCheckbox" />Mit der &#x00D6;ffnungsblende lassen sich der Abbildungsma&#x00DF;stab und die Sch&#x00E4;rfentiefe<br />eines Objektivs einstellen.</div></form></li><li id="Q_7_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_7_4_Chk" class="MSelCheckbox" />Mit der &#x00D6;ffnungsblende lassen sich die Aufl&#x00F6;sung und die Sch&#x00E4;rfentiefe eines Objektivs<br />einstellen.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(7)">Check</button></li>
+<li class="QuizQuestion" id="Q_8" style="display: none;"><div class="QuestionText">3.9 Feldblenden &#x2026;</div><ol class="MSelAnswers"><li id="Q_8_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_8_0_Chk" class="MSelCheckbox" />Feldblenden haben Einfluss auf den &#x00D6;ffnungswinkel und die numerische Apertur<br />eines Objektivs.</div></form></li><li id="Q_8_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_8_1_Chk" class="MSelCheckbox" />Feldblenden begrenzen die Gr&#x00F6;&#x00DF;e des abgebildeten Objektausschnittes.</div></form></li><li id="Q_8_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_8_2_Chk" class="MSelCheckbox" />Feldblenden an der falschen Position f&#x00FC;hren zu sph&#x00E4;rischer und chromatischer<br />Aberration im Bild</div></form></li><li id="Q_8_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_8_3_Chk" class="MSelCheckbox" />Feldblenden an der falschen Position f&#x00FC;hren zu Vignettierungen im Bild.</div></form></li><li id="Q_8_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_8_4_Chk" class="MSelCheckbox" />Die Feldblende ist grunds&#x00E4;tzlich identisch mit der Eintrittspupille.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(8)">Check</button></li>
+<li class="QuizQuestion" id="Q_9" style="display: none;"><div class="QuestionText">3.12 Was ist zutreffend bez&#x00FC;glich der beugungsbegrenzten Aufl&#x00F6;sung?</div><ol class="MSelAnswers"><li id="Q_9_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_9_0_Chk" class="MSelCheckbox" />Punkte werden aufgrund wellenoptischer Effekte als ausgedehnte Beugungsfiguren<br />abgebildet und k&#x00F6;nnen deshalb bei zu geringem Abstand nicht mehr unterschieden<br />werden</div></form></li><li id="Q_9_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_9_1_Chk" class="MSelCheckbox" />Eng benachbarte kleine Strukturen l&#x00F6;schen sich aufgrund wellenoptischer Effekte<br />komplett aus und k&#x00F6;nnen deshalb nicht mehr voneinander unterschieden werden.</div></form></li><li id="Q_9_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_9_2_Chk" class="MSelCheckbox" />Eine Definition der Aufl&#x00F6;sungsgrenze: die Hauptmaxima beider Beugungsmuster<br />m&#x00FC;ssen mindestens so weit entfernt sein wie das Hauptmaximum vom ersten<br />Minimum</div></form></li><li id="Q_9_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_9_3_Chk" class="MSelCheckbox" />Die Aufl&#x00F6;sungsgrenze ergibt sich aus der Abbeschen Sinusbedingung.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(9)">Check</button></li>
+<li class="QuizQuestion" id="Q_10" style="display: none;"><div class="QuestionText">3.13 Welche Bedeutung haben Polarisationsfilter in der Bildverarbeitung?<br /></div><ol class="MSelAnswers"><li id="Q_10_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_10_0_Chk" class="MSelCheckbox" />Durch die Polarisation des auf die Kamera treffenden Lichtes erh&#x00F6;ht sich die optische<br />Aufl&#x00F6;sung.</div></form></li><li id="Q_10_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_10_1_Chk" class="MSelCheckbox" />Mit polarisiertem Licht werden Kantenverl&#x00E4;ufe besonders gut hervorgehoben.</div></form></li><li id="Q_10_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_10_2_Chk" class="MSelCheckbox" />Direkte Reflexe spiegelnder Oberfl&#x00E4;chen sind meist polarisiert. Mittels in der richtigen<br />Orientierung angeordneter Polarisationsfilter lassen sich st&#x00F6;rende Reflexionen<br />somit unterdr&#x00FC;cken.</div></form></li><li id="Q_10_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_10_3_Chk" class="MSelCheckbox" />Polarisationsfilter unterdr&#x00FC;cken Streulichteinfl&#x00FC;sse, welche ausschlie&#x00DF;lich durch<br />Oberfl&#x00E4;chenfehler optischer Bauelemente und Lichtbeugung entstehen.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(10)">Check</button></li>
+<li class="QuizQuestion" id="Q_11" style="display: none;"><div class="QuestionText">3.16 Wodurch sind Smart Kameras charakterisiert</div><ol class="MSelAnswers"><li id="Q_11_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_11_0_Chk" class="MSelCheckbox" />extrem kleine Bauweise,</div></form></li><li id="Q_11_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_11_1_Chk" class="MSelCheckbox" />Integration von Kamera, A/D-Wandlung, Rechentechnik und BV-Software in<br />einem Geh&#x00E4;use,</div></form></li><li id="Q_11_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_11_2_Chk" class="MSelCheckbox" />Integrierte LED-Beleuchtung,</div></form></li><li id="Q_11_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_11_3_Chk" class="MSelCheckbox" />Integration von Bildverarbeitung und weiteren sensorischen Funktionen (z.B.<br />Lichtschranken, Laserabstandsmessung usw.)</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(11)">Check</button></li>
+<li class="QuizQuestion" id="Q_12" style="display: none;"><div class="QuestionText">3.17 Was ist kennzeichnend f&#x00FC;r Asynchron- bzw. Restart-Reset-Kameras?</div><ol class="MSelAnswers"><li id="Q_12_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_12_0_Chk" class="MSelCheckbox" />Das generierte Bildsignal ist nicht pixelsynchron</div></form></li><li id="Q_12_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_12_1_Chk" class="MSelCheckbox" />Unterbrechung des aktuelle Videozyklus nach einem Triggerimpuls, danach mit<br />geringer Zeitverz&#x00F6;gerung Start eines neuen Videozyklus (Belichtung und Auslesung)</div></form></li><li id="Q_12_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_12_2_Chk" class="MSelCheckbox" />Zur Beseitigung von Restladungen R&#x00FC;cksetzen des Bildsensors nach jedem Videozyklus<br />durch ein aufw&#x00E4;ndiges Taktregime, Folge ist ein nichtsynchrones Videosignal.</div></form></li><li id="Q_12_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_12_3_Chk" class="MSelCheckbox" />3-Chip Farbkameras, bei welchen die 3 Farbkan&#x00E4;le nicht synchron zueinander ausgelesen<br />werden</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(12)">Check</button></li>
+<li class="QuizQuestion" id="Q_13" style="display: none;"><div class="QuestionText">3.18 Was ist f&#x00FC;r einen Bayer-Sensor zutreffend?</div><ol class="MSelAnswers"><li id="Q_13_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_13_0_Chk" class="MSelCheckbox" />Ein Bayer-Sensor ist ein Farbbild-Sensor, bei welchen in rechteckigen Bl&#x00F6;cken von<br />4 Pixeln vor jedem Pixel jeweils ein Farbfilter positioniert ist. &#x00DC;blicherweise sind<br />dies Filter der Farben Rot, Gr&#x00FC;n, Gelb und Blau.</div></form></li><li id="Q_13_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_13_1_Chk" class="MSelCheckbox" />Ein Bayer-Sensor ist ein Farbbild-Sensor, bei welchen in rechteckigen Bl&#x00F6;cken von<br />4 Pixeln vor jedem Pixel jeweils ein Farbfilter positioniert ist.</div></form></li><li id="Q_13_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_13_2_Chk" class="MSelCheckbox" />Ein Bayer-Sensor ist ein Farbsensor, welcher speziell f&#x00FC;r die Chemie-Industrie zur<br />Qualit&#x00E4;tskontrolle bei der Herstellung von Farben entwickelt wurde.</div></form></li><li id="Q_13_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_13_3_Chk" class="MSelCheckbox" />Das Verh&#x00E4;ltnis der Farbempfindlichkeit der Farben Rot : Gr&#x00FC;n : Blau ist bei einem<br />Bayer-Sensor 1 : 2 : 1.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(13)">Check</button></li>
+<li class="QuizQuestion" id="Q_14" style="display: none;"><div class="QuestionText">3.19 Welche der nachfolgend aufgef&#x00FC;hrten Komponenten sind typische<br />Bestandteile von digitalen Standardkameras</div><ol class="MSelAnswers"><li id="Q_14_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_14_0_Chk" class="MSelCheckbox" />A/D-Wandler</div></form></li><li id="Q_14_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_14_1_Chk" class="MSelCheckbox" />VGA-Schnittstelle</div></form></li><li id="Q_14_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_14_2_Chk" class="MSelCheckbox" />Objektiv</div></form></li><li id="Q_14_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_14_3_Chk" class="MSelCheckbox" />Integrierte Beleuchtung,</div></form></li><li id="Q_14_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_14_4_Chk" class="MSelCheckbox" />Mikroprozessor bzw. Microcontroller f&#x00FC;r Bildverarbeitungsalgorithmen</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(14)">Check</button></li>
+<li class="QuizQuestion" id="Q_15" style="display: none;"><div class="QuestionText">3.21 Wie ist allgemein die sensorische Empfindlichkeit (Responsivity) von<br />Strahlungsdetektoren definiert?<br /></div><ol class="MSelAnswers"><li id="Q_15_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_15_0_Chk" class="MSelCheckbox" />Verh&#x00E4;ltnis von maximal detektierbarer Menge einer strahlungsphysikalischen<br />Gr&#x00F6;&#x00DF;e zur kleinsten noch detektierbaren Menge,</div></form></li><li id="Q_15_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_15_1_Chk" class="MSelCheckbox" />&#x00C4;nderung des Ausgangssignals, bezogen auf die &#x00C4;nderung der strahlungsphysikalischen<br />Eingangsgr&#x00F6;&#x00DF;e,</div></form></li><li id="Q_15_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_15_2_Chk" class="MSelCheckbox" />kleinste noch detektierbare Menge einer strahlungsphysikalischen Gr&#x00F6;&#x00DF;e,</div></form></li><li id="Q_15_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_15_3_Chk" class="MSelCheckbox" />Verh&#x00E4;ltnis von gr&#x00F6;&#x00DF;tem Ausgangssignal zur kleinsten noch detektierbaren Menge<br />einer Strahlungsgr&#x00F6;&#x00DF;e</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(15)">Check</button></li>
+<li class="QuizQuestion" id="Q_16" style="display: none;"><div class="QuestionText">3.22 Wie ist allgemein die Ansprechempfindlichkeit (Sensivity) von Strahlungsdetektoren<br />definiert?<br /></div><ol class="MSelAnswers"><li id="Q_16_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_16_0_Chk" class="MSelCheckbox" />Verh&#x00E4;ltnis von maximal detektierbarer Menge einer Strahlungsgr&#x00F6;&#x00DF;e zur kleinsten<br />noch detektierbaren Menge,</div></form></li><li id="Q_16_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_16_1_Chk" class="MSelCheckbox" />&#x00C4;nderung des Ausgangssignals, bezogen auf die &#x00C4;nderung der strahlungsphysikalischen<br />Eingangsgr&#x00F6;&#x00DF;e,</div></form></li><li id="Q_16_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_16_2_Chk" class="MSelCheckbox" />kleinste noch detektierbare Menge einer strahlungsphysikalische oder lichttechnischen<br />Gr&#x00F6;&#x00DF;e,</div></form></li><li id="Q_16_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_16_3_Chk" class="MSelCheckbox" />Ausgangssignal des Detektors, welches bei der kleinsten noch detektierbaren<br />Strahlungsmenge auftritt</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(16)">Check</button></li>
+<li class="QuizQuestion" id="Q_17" style="display: none;"><div class="QuestionText">3.23 Nach welchem Prinzip erfolgt bei CCD-Sensoren die Signal&#x00FC;bertragung von<br />den Pixeln zum Ausgangsverst&#x00E4;rker?<br /></div><ol class="MSelAnswers"><li id="Q_17_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_17_0_Chk" class="MSelCheckbox" />als Spannungssignal &#x00FC;ber elektrische Leitungen</div></form></li><li id="Q_17_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_17_1_Chk" class="MSelCheckbox" />mittels optischer &#x00DC;bertragung,</div></form></li><li id="Q_17_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_17_2_Chk" class="MSelCheckbox" />Verschiebung von Ladungspaketen nach dem Ladungskopplungsprinzip</div></form></li><li id="Q_17_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_17_3_Chk" class="MSelCheckbox" />als Stromsignal, die Pixel fungieren hierbei als Stromquellen,</div></form></li><li id="Q_17_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_17_4_Chk" class="MSelCheckbox" />als Stromsignal; die Ladungen werden dabei mit Hilfe des Ladungskopplungsprinzips<br />zun&#x00E4;chst zu jedem Pixel geh&#x00F6;rigen Ladungsverst&#x00E4;rker transportiert, welchem<br />wiederum eine Stromquelle nachgeschaltet ist.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(17)">Check</button></li>
+<li class="QuizQuestion" id="Q_18" style="display: none;"><div class="QuestionText">3.25 Wodurch sind telezentrische Messobjektive gekennzeichnet?<br /></div><ol class="MSelAnswers"><li id="Q_18_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_18_0_Chk" class="MSelCheckbox" />Bei telezentrischen Messobjektiven ist das Verh&#x00E4;ltnis von Objekt- zur Bildweite<br />konstant.</div></form></li><li id="Q_18_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_18_1_Chk" class="MSelCheckbox" />Telezentrische Messobjektive sind spezielle Mikroskopobjektive zur Vermessung<br />von mikroskopisch kleinen Bauteilen.</div></form></li><li id="Q_18_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_18_2_Chk" class="MSelCheckbox" />Bei telezentrischen Messobjektiven ist der Abbildungsma&#x00DF;stab weitestgehend<br />unabh&#x00E4;ngig vom Objektabstand.</div></form></li><li id="Q_18_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_18_3_Chk" class="MSelCheckbox" />Telezentrische Messobjektive sind im Bereich der optischen Achse besonders<br />lichtstark.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(18)">Check</button></li>
+<li class="QuizQuestion" id="Q_19" style="display: none;"><div class="QuestionText">3.26 Was ist die K&#x00F6;hlersche Beleuchtung bzw. wodurch ist sie charakterisiert?<br /></div><ol class="MSelAnswers"><li id="Q_19_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_19_0_Chk" class="MSelCheckbox" />Die K&#x00F6;hlersche Beleuchtung ist ein Streifenprojektionsverfahren zur dreidimensionalen<br />Erfassung von Oberfl&#x00E4;chenprofilen.</div></form></li><li id="Q_19_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_19_1_Chk" class="MSelCheckbox" />Die K&#x00F6;hlersche Beleuchtung ist ein speziell f&#x00FC;r Mikroskopanwendungen entwikkeltes<br />Beleuchtungsverfahren.</div></form></li><li id="Q_19_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_19_2_Chk" class="MSelCheckbox" />Bei der K&#x00F6;hlerschen Beleuchtung wird eine sehr schmalbandige Lichtquelle mit<br />hohem Koh&#x00E4;renzgrad verwendet.</div></form></li><li id="Q_19_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_19_3_Chk" class="MSelCheckbox" />Bei der K&#x00F6;hlerschen Beleuchtung lassen sich die Gr&#x00F6;&#x00DF;e des ausgeleuchteten<br />Feldes und die Beleuchtungsapertur unabh&#x00E4;ngig voneinander einstellen.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(19)">Check</button></li>
+<li class="QuizQuestion" id="Q_20" style="display: none;"><div class="QuestionText">3.27 Wie ist bei einer Halbleiterkamera die Sch&#x00E4;rfentiefe definiert?<br /></div><ol class="MSelAnswers"><li id="Q_20_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_20_0_Chk" class="MSelCheckbox" />L&#x00E4;nge eines objektseitigen Bereiches der optischen Achse, in dem zwei Punkte<br />optisch gerade noch aufgel&#x00F6;st werden k&#x00F6;nnen,</div></form></li><li id="Q_20_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_20_1_Chk" class="MSelCheckbox" />L&#x00E4;nge eines objektseitigen Bereiches auf der optischen Achse, in dem ein Punkt<br />auf einen Unsch&#x00E4;rfekreis maximal in Gr&#x00F6;&#x00DF;e der Pixelabmessungen auf die<br />Bildseite abgebildet wird,</div></form></li><li id="Q_20_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_20_2_Chk" class="MSelCheckbox" />L&#x00E4;nge eines bildseitigen Bereiches auf der optischen Achse, in dem ein Punkt auf<br />einen Unsch&#x00E4;rfekreis maximal in Gr&#x00F6;&#x00DF;e der Pixelabmessungen auf die Bildseite<br />abgebildet wird,</div></form></li><li id="Q_20_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_20_3_Chk" class="MSelCheckbox" />L&#x00E4;nge eines Bereiches entlang der optischen Achse, innerhalb dessen zwei<br />Objekte mit dem gleichen Abbildungsma&#x00DF;stab abgebildet werden.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(20)">Check</button></li>
+<li class="QuizQuestion" id="Q_21" style="display: none;"><div class="QuestionText">4.1 Was sind Ortsfrequenzen?</div><ol class="MSelAnswers"><li id="Q_21_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_21_0_Chk" class="MSelCheckbox" />Frequenzen elektromagnetischer Wellenl&#x00E4;ngen, welche nur an bestimmten Orten<br />auftreten (z. B. durch konstante Wellenl&#x00E4;ngen farbiger Objekte</div></form></li><li id="Q_21_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_21_1_Chk" class="MSelCheckbox" />zeitliche Schwankungen der Helligkeitsinformation eines festen Pixels von Bildaufnehmern<br />bei Bildfolgen</div></form></li><li id="Q_21_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_21_2_Chk" class="MSelCheckbox" />Anzahlen von Schwingungen bzw. Perioden pro L&#x00E4;ngeneinheit,</div></form></li><li id="Q_21_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_21_3_Chk" class="MSelCheckbox" />zeitliche Schwankungen bestimmter geometrischer Objektkenngr&#x00F6;&#x00DF;en (Schwerpunkt,<br />L&#x00E4;nge, Fl&#x00E4;che usw.) bei Bildern von elastischen Objekten.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(21)">Check</button></li>
+<li class="QuizQuestion" id="Q_22" style="display: none;"><div class="QuestionText">4.2 Was versteht man unter Aliasing bzw. welche Effekte werden dadurch verursacht?<br /></div><ol class="MSelAnswers"><li id="Q_22_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_22_0_Chk" class="MSelCheckbox" />Vort&#x00E4;uschung niederfrequenter, im Originalsignal nicht vorhandener Signalanteile,</div></form></li><li id="Q_22_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_22_1_Chk" class="MSelCheckbox" />Infolge Aliasings werden Signale mit Frequenzen gr&#x00F6;&#x00DF;er als das Doppelte der<br />Abtastfrequenz vorget&#x00E4;uscht, welche im urspr&#x00FC;nglichen Signal nicht enthalten<br />sind.</div></form></li><li id="Q_22_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_22_2_Chk" class="MSelCheckbox" />Unter Aliasing versteht man fehlerhafte Bildsignale infolge falscher Belichtung.</div></form></li><li id="Q_22_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_22_3_Chk" class="MSelCheckbox" />Aliasing entsteht durch fehlerbehaftete Rekonstruktion von Signalen infolge<br />Verletzung des Abtasttheorems (Unterabtastung, &#x201E;undersampling&#x201E;).</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(22)">Check</button></li>
+<li class="QuizQuestion" id="Q_23" style="display: none;"><div class="QuestionText">4.3 Was ist bez&#x00FC;glich der Bildabtastung durch Halbleiterbildsensoren zutreffend?<br /></div><ol class="MSelAnswers"><li id="Q_23_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_23_0_Chk" class="MSelCheckbox" />Es k&#x00F6;nnen nur Signale fehlerfrei rekonstruiert werden, deren kleinste im Ortsfrequenzspektrum<br />auftretende Periodendauer gr&#x00F6;&#x00DF;er ist als das doppelte Pixelraster,<br />zzgl. Eines Sicherheitsfaktors.</div></form></li><li id="Q_23_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_23_1_Chk" class="MSelCheckbox" />Es k&#x00F6;nnen nur Signale fehlerfrei rekonstruiert werden, deren kleinste im Ortsfrequenzspektrum<br />auftretende Periodendauer gr&#x00F6;&#x00DF;er ist als das halbe Pixelraster,<br />zzgl. Eines Sicherheitsfaktors.</div></form></li><li id="Q_23_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_23_2_Chk" class="MSelCheckbox" />Da Halbleiterbildsensoren ein integrales Signal &#x00FC;ber die Pixelfl&#x00E4;che bilden, was einem<br />Tiefpassverhalten entspricht, er&#x00FC;brigt sich in vielen F&#x00E4;llen der Einsatz von<br />Anti-Aliasing-Filtern</div></form></li><li id="Q_23_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_23_3_Chk" class="MSelCheckbox" />Die Ortsaufl&#x00F6;sung ist zwar grunds&#x00E4;tzlich durch das Pixelraster begrenzt, kann jedoch<br />mittels Subpixelalgorithmen erheblich gesteigert werden.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(23)">Check</button></li>
+<li class="QuizQuestion" id="Q_24" style="display: none;"><div class="QuestionText">4.4 Was ist beim Einsatz von Halbleiterbildsensoren in der dimensionellen Messtechnik bzw. in der Strukturerkennung zutreffend?</div><ol class="MSelAnswers"><li id="Q_24_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_24_0_Chk" class="MSelCheckbox" />Die Ortsaufl&#x00F6;sung ist zun&#x00E4;chst durch das Pixelraster begrenzt, kann jedoch durch<br />Subpixelalgorithmen gesteigert werden.</div></form></li><li id="Q_24_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_24_1_Chk" class="MSelCheckbox" />Die Messgenauigkeit bei Aufgaben der L&#x00E4;ngenmesstechnik (L&#x00E4;nge, Abstand, Position)<br />ist durch das Pixelraster begrenzt und kann grunds&#x00E4;tzlich nicht weiter gesteigert<br />werden.</div></form></li><li id="Q_24_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_24_2_Chk" class="MSelCheckbox" />Die Messgenauigkeit bei Aufgaben der L&#x00E4;ngenmesstechnik (L&#x00E4;nge, Abstand, Objekt-,<br />Kantenposition) ist zun&#x00E4;chst durch das Pixelraster begrenzt, kann aber<br />durch Subpixelalgorithmen gesteigert werden.</div></form></li><li id="Q_24_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_24_3_Chk" class="MSelCheckbox" />Das Pixelraster hat f&#x00FC;r die Messgenauigkeit bzw. Ortsaufl&#x00F6;sung keine Bedeutung.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(24)">Check</button></li>
+<li class="QuizQuestion" id="Q_25" style="display: none;"><div class="QuestionText">5.1 Was versteht man unter der Dynamik eines Bildes<br /></div><ol class="MSelAnswers"><li id="Q_25_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_25_0_Chk" class="MSelCheckbox" />die Anzahl unterschiedlicher Merkmale f&#x00FC;r eine Klassifikation,</div></form></li><li id="Q_25_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_25_1_Chk" class="MSelCheckbox" />Der maximale Grauwert im Bild im Verh&#x00E4;ltnis zum Rauschen des Bildsignals,</div></form></li><li id="Q_25_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_25_2_Chk" class="MSelCheckbox" />Die Anzahl verschiedener Grauwerte des Bildes,</div></form></li><li id="Q_25_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_25_3_Chk" class="MSelCheckbox" />Das Verh&#x00E4;ltnis vom maximalen zum minimalen Grauwert im Bild</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(25)">Check</button></li>
+<li class="QuizQuestion" id="Q_26" style="display: none;"><div class="QuestionText">5.2 Wovon ist der Kontrast eines Bildes abh&#x00E4;ngig?</div><ol class="MSelAnswers"><li id="Q_26_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_26_0_Chk" class="MSelCheckbox" />von der Anzahl verschiedener Grauwerte des Bildes,</div></form></li><li id="Q_26_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_26_1_Chk" class="MSelCheckbox" />vom Verh&#x00E4;ltnis vom maximalen Grauwert im Bild zum Bildrauschen,</div></form></li><li id="Q_26_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_26_2_Chk" class="MSelCheckbox" />vom Verh&#x00E4;ltnis der Bestrahlungsst&#x00E4;rke zur Strahldichte,</div></form></li><li id="Q_26_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_26_3_Chk" class="MSelCheckbox" />vom maximalen zum minimalen Grauwert im Bild</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(26)">Check</button></li>
+<li class="QuizQuestion" id="Q_27" style="display: none;"><div class="QuestionText">5.3 Was ist charakteristisch f&#x00FC;r eine Histogrammebnung bzw. einen linearen Histogrammausgleich?<br /></div><ol class="MSelAnswers"><li id="Q_27_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_27_0_Chk" class="MSelCheckbox" />Anpassung des Histogramms an eine allgemeine Referenzfunktiom</div></form></li><li id="Q_27_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_27_1_Chk" class="MSelCheckbox" />Anpassung des kumulativen Histogramms an eine lineare Funktion,</div></form></li><li id="Q_27_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_27_2_Chk" class="MSelCheckbox" />Umwandlung eines gegebenen Grauwerthistogramms in ein gleichverteiltes<br />Histogramm,</div></form></li><li id="Q_27_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_27_3_Chk" class="MSelCheckbox" />Austausch der Grauwerte des Bildes gegen die H&#x00E4;ufigkeit ihres Auftretens,</div></form></li><li id="Q_27_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_27_4_Chk" class="MSelCheckbox" />Anpassung des Grauwerthistogramms an eine lineare Funktion</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(27)">Check</button></li>
+<li class="QuizQuestion" id="Q_28" style="display: none;"><div class="QuestionText">5.4 Was versteht man in der DBV allgemein unter einer Histogrammanpassung?</div><ol class="MSelAnswers"><li id="Q_28_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_28_0_Chk" class="MSelCheckbox" />Austausch der Werte der H&#x00E4;ufigkeit der Grauwerte eines Bildes gegen die kumulierte<br />H&#x00E4;ufigkeit,</div></form></li><li id="Q_28_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_28_1_Chk" class="MSelCheckbox" />Umwandlung eines gegebenen Grauwerthistogramms in ein vorgegebenes Histogramm,</div></form></li><li id="Q_28_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_28_2_Chk" class="MSelCheckbox" />Anpassung eines kumulierten Histogramms an ein vorgegebenes Referenzhistogramm</div></form></li><li id="Q_28_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_28_3_Chk" class="MSelCheckbox" />Anpassung des kumulativen Grauwerthistogramms an eine lineare Funktion,</div></form></li><li id="Q_28_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_28_4_Chk" class="MSelCheckbox" />Austausch der Grauwerte des Bildes gegen die H&#x00E4;ufigkeit ihres Auftretens,</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(28)">Check</button></li>
+<li class="QuizQuestion" id="Q_29" style="display: none;"><div class="QuestionText">7.1 Was ist ein Median-Filter?</div><ol class="MSelAnswers"><li id="Q_29_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_29_0_Chk" class="MSelCheckbox" />Der Medianfilter bildet den lokalen Mittelwert &#x00FC;ber die Helligkeitsverteilung.</div></form></li><li id="Q_29_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_29_1_Chk" class="MSelCheckbox" />Auflistung aller (auch mehrfach auftretender) Werte der Filtermaske der Gr&#x00F6;&#x00DF;e<br />nach, das Ergebnis der Filterung ist der Wertes an der Mittenposition der Liste</div></form></li><li id="Q_29_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_29_2_Chk" class="MSelCheckbox" />Der Medianfilter gibt den mittleren Wert in der Liste der nach aufsteigenden<br />Zeilen- und Spaltenindizes der Pixel sortierten Amplitudenwerte als Ergebnis<br />zur&#x00FC;ck.</div></form></li><li id="Q_29_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_29_3_Chk" class="MSelCheckbox" />Auflistung aller (auch mehrfach auftretender) Werte der Filtermaske der Gr&#x00F6;&#x00DF;e<br />nach, das Ergebnis der Filterung ist der gleitende Mittelwert &#x00FC;ber diese Liste.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(29)">Check</button></li>
+<li class="QuizQuestion" id="Q_30" style="display: none;"><div class="QuestionText">7.2 Was ist charakteristisch f&#x00FC;r den Sobel-Operator?</div><ol class="MSelAnswers"><li id="Q_30_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_30_0_Chk" class="MSelCheckbox" />Der Sobel-Operator ist ein Kantenfilter, welcher in alle Richtungen empfindlich<br />ist.</div></form></li><li id="Q_30_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_30_1_Chk" class="MSelCheckbox" />Der Sobel-Operator ist ein Kantenfilter mit Vorzugsrichtung. Senkrecht zur Vorzugsrichtung<br />ist er als Gauss-Filter ausgelegt.</div></form></li><li id="Q_30_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_30_2_Chk" class="MSelCheckbox" />Der Sobel-Operator ist ein Kantenfilter mit Vorzugsrichtung. Senkrecht zur Vorzugsrichtung<br />ist er als einfacher Mittelwertfilter ausgelegt.</div></form></li><li id="Q_30_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_30_3_Chk" class="MSelCheckbox" />Der Sobel-Operator ist ein modifizierter Mittelwertfilter mit Wichtung der<br />Amplitudenwerte in Abh&#x00E4;ngigkeit von der Entfernung zum betrachteten Pixel.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(30)">Check</button></li>
+<li class="QuizQuestion" id="Q_31" style="display: none;"><div class="QuestionText">7.3 Was ist charakteristisch f&#x00FC;r den Prewitt-Operator?</div><ol class="MSelAnswers"><li id="Q_31_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_31_0_Chk" class="MSelCheckbox" />Der Prewitt-Operator ist ein Kantenfilter, welcher in alle Richtungen empfindlich<br />ist.</div></form></li><li id="Q_31_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_31_1_Chk" class="MSelCheckbox" />Der Prewitt-Operator ist ein Kantenfilter mit Vorzugsrichtung. Senkrecht zur<br />Vorzugsrichtung ist er als Gauss-Filter ausgelegt.</div></form></li><li id="Q_31_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_31_2_Chk" class="MSelCheckbox" />Der Prewitt-Operator ist ein Kantenfilter mit Vorzugsrichtung. Senkrecht zur<br />Vorzugsrichtung ist er als einfacher Mittelwertfilter ausgelegt.</div></form></li><li id="Q_31_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_31_3_Chk" class="MSelCheckbox" />Der Prewitt-Operator ist ein modifizierter Mittelwertfilter mit Wichtung der<br />Amplitudenwerte in Abh&#x00E4;ngigkeit von der Entfernung zum betrachteten Pixel.</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(31)">Check</button></li>
+<li class="QuizQuestion" id="Q_32" style="display: none;"><div class="QuestionText">7.5 Was ist im Zusammenhang mit Kantenfiltern die Kantenst&#x00E4;rke<br /></div><ol class="MSelAnswers"><li id="Q_32_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_32_0_Chk" class="MSelCheckbox" />Die Differenz zwischen der gr&#x00F6;&#x00DF;ten und kleinsten Pixelamplitude entlang des Gradienten<br />der Kante,</div></form></li><li id="Q_32_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_32_1_Chk" class="MSelCheckbox" />Der h&#x00F6;chste Gradient in der lokalen Umgebung einer Kante,</div></form></li><li id="Q_32_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_32_2_Chk" class="MSelCheckbox" />Die Wurzel aus der Quadratsumme der Gradienten in waagerechter und senkrechter<br />Richtung,</div></form></li><li id="Q_32_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_32_3_Chk" class="MSelCheckbox" />Die Wurzel aus der Quadratsumme der senkrechten und waagerechten Projektionen<br />der Strecke entlang des Gradienten der Kante,</div></form></li><li id="Q_32_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_32_4_Chk" class="MSelCheckbox" />Die L&#x00E4;nge der ansteigenden Strecke entlang des Gradienten</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(32)">Check</button></li>
+<li class="QuizQuestion" id="Q_33" style="display: none;"><div class="QuestionText">7.7 Was ist charakteristisch f&#x00FC;r den Laplace-Operator? </div><ol class="MSelAnswers"><li id="Q_33_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_33_0_Chk" class="MSelCheckbox" />die 2. Ableitung in Verbindung mit dem Gauss-Operator</div></form></li><li id="Q_33_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_33_1_Chk" class="MSelCheckbox" />die 2. Ableitung,</div></form></li><li id="Q_33_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_33_2_Chk" class="MSelCheckbox" />die 2. Ableitung in einer Richtung in Verbindung mit einfachem Mittelwertfilter<br />senkrecht zu dieser Richtung,</div></form></li><li id="Q_33_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_33_3_Chk" class="MSelCheckbox" />die 2. Ableitung in Verbindung mit einem Median-Filter</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(33)">Check</button></li>
+<li class="QuizQuestion" id="Q_34" style="display: none;"><div class="QuestionText">8.1 Welcher bzw. welche der nachfolgend aufgef&#x00FC;hrten Abl&#x00E4;ufe ist (sind) einschlie&#x00DF;lich<br />der Reihenfolge korrekt, um ein Ortsbild zu filtern und das Ergebnis als Bild<br />im Ortsbereich zu erhalten?<br /></div><ol class="MSelAnswers"><li id="Q_34_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_34_0_Chk" class="MSelCheckbox" />Multiplikation des Bildes mit der &#x00DC;bertragungsfunktion des Filters, Fouriertransformation<br />des gefilterten Bildes in den Ortsfrequenzraum, Faltung mit der &#x00DC;bertragungsfunktion,<br />R&#x00FC;cktransformation</div></form></li><li id="Q_34_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_34_1_Chk" class="MSelCheckbox" />Fouriertransformation des Bildes in den Ortsfrequenzraum, Multiplikation mit der<br />&#x00DC;bertragungsfunktion des Filters, R&#x00FC;cktransformation,</div></form></li><li id="Q_34_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_34_2_Chk" class="MSelCheckbox" />Faltung des Bildes mit der &#x00DC;bertragungsfunktion des Filters,</div></form></li><li id="Q_34_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_34_3_Chk" class="MSelCheckbox" />Faltung des Bildes mit der Gewichtsfunktion (Filterkern) des Filters,</div></form></li><li id="Q_34_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_34_4_Chk" class="MSelCheckbox" />Faltung des Bildes mit der Gewichtsfunktion, Fouriertransformation des gefilterten<br />Bildes, Multiplikation mit der &#x00DC;bertragungsfunktion im Ortsfrequenzraum,<br />R&#x00FC;cktransformation</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(34)">Check</button></li>
+<li class="QuizQuestion" id="Q_35" style="display: none;"><div class="QuestionText">8.2 Welches Vorgehen zur zentrierten Darstellung einer zweidimensionalen DFT ist<br />korrekt?</div><ol class="MSelAnswers"><li id="Q_35_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_35_0_Chk" class="MSelCheckbox" />Vertauschen der Quadranten des Bildes der DFT, sodass eine zentralsymmetrische<br />Abbildung entsteht,</div></form></li><li id="Q_35_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_35_1_Chk" class="MSelCheckbox" />Vertauschen der Quadranten des Bildes der DFT, sodass der Gleichanteil des Spektrums<br />sowie die Beitr&#x00E4;ge kleinerer Frequenzen in der Bildmitte dargestellt werden,</div></form></li><li id="Q_35_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_35_2_Chk" class="MSelCheckbox" />Vertauschen der Quadranten des Bildes der DFT, sodass die Beitr&#x00E4;ge hoher Frequenzen<br />in der Bildmitte dargestellt werden,</div></form></li><li id="Q_35_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_35_3_Chk" class="MSelCheckbox" />Vertauschen der Quadranten des Bildes der DFT, sodass die h&#x00F6;chsten Anteile des<br />Spektrums in der Mitte des Diagramms dargestellt werden</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(35)">Check</button></li>
+<li class="QuizQuestion" id="Q_36" style="display: none;"><div class="QuestionText">9.1 Wie ist der Formfaktor definiert (ggf. mit Vorfaktor)?</div><ol class="MSelAnswers"><li id="Q_36_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_36_0_Chk" class="MSelCheckbox" />Verh&#x00E4;ltnis vom Umfangsquadrat zur Fl&#x00E4;che</div></form></li><li id="Q_36_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_36_1_Chk" class="MSelCheckbox" />Verh&#x00E4;ltnis von Umfang zur Fl&#x00E4;che</div></form></li><li id="Q_36_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_36_2_Chk" class="MSelCheckbox" />Produkt aus gr&#x00F6;&#x00DF;ter Ausdehnung durch den Fl&#x00E4;chenschwerpunkt und Umfang,</div></form></li><li id="Q_36_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_36_3_Chk" class="MSelCheckbox" />Verh&#x00E4;ltnis aus der Fl&#x00E4;che des Objektes und der Fl&#x00E4;che eines Kreises, welcher mit<br />der Methode der kleinsten Fehlerquadratsumme durch die &#x00E4;u&#x00DF;ere Kontur<br />gebildet wird,</div></form></li><li id="Q_36_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_36_4_Chk" class="MSelCheckbox" />Verh&#x00E4;ltnis aus der Fl&#x00E4;che des Objektes und der Fl&#x00E4;che des &#x00E4;u&#x00DF;eren Umkreises</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(36)">Check</button></li>
+<li class="QuizQuestion" id="Q_37" style="display: none;"><div class="QuestionText">9.2 Bei welchen der nachfolgend aufgef&#x00FC;hrten Kategorien handelt es sich um<br />Formparameter?</div><ol class="MSelAnswers"><li id="Q_37_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_37_0_Chk" class="MSelCheckbox" />Laplace-Operator,</div></form></li><li id="Q_37_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_37_1_Chk" class="MSelCheckbox" />Fourier-Descriptor,</div></form></li><li id="Q_37_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_37_2_Chk" class="MSelCheckbox" />Zentrales Moment erster Ordnung,</div></form></li><li id="Q_37_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_37_3_Chk" class="MSelCheckbox" />Randcode nach Freeman,</div></form></li><li id="Q_37_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_37_4_Chk" class="MSelCheckbox" />Konturl&#x00E4;nge</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(37)">Check</button></li>
+<li class="QuizQuestion" id="Q_38" style="display: none;"><div class="QuestionText">10.1 Was versteht man unter einem Merkmalsraum?<br /></div><ol class="MSelAnswers"><li id="Q_38_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_38_0_Chk" class="MSelCheckbox" />Mathematischer Raum mit einer oder mehreren (n) Dimensionen, in welchem sich<br />ein- bzw. n-dimensionale Merkmalsvektoren darstellen lassen,</div></form></li><li id="Q_38_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_38_1_Chk" class="MSelCheckbox" />Mathematischer Raum zur Darstellung r&#x00E4;umlicher (dreidimensionaler) Merkmale,</div></form></li><li id="Q_38_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_38_2_Chk" class="MSelCheckbox" />Speicherbereich in einem Computer zur Ablage quantifizierbarer Merkmale,</div></form></li><li id="Q_38_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_38_3_Chk" class="MSelCheckbox" />Mehr oder weniger gut abgegrenztes Gebiet innerhalb eines Merkmalsraumes,<br />welches alle bzw. eine ausreichend gro&#x00DF;e Anzahl aller m&#x00F6;glichen Merkmalsvektoren<br />einer Objektklasse ohne &#x00DC;berschneidungen zu anderen Klassen enth&#x00E4;lt</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(38)">Check</button></li>
+<li class="QuizQuestion" id="Q_39" style="display: none;"><div class="QuestionText">10.2 Was versteht man in der Mustererkennung unter einem Cluster und welche<br />Eigenschaft sollte es besitzen</div><ol class="MSelAnswers"><li id="Q_39_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_39_0_Chk" class="MSelCheckbox" />Mehr oder weniger gut abgegrenztes Gebiet innerhalb eines Merkmalsraumes,<br />welches alle bzw. eine ausreichend gro&#x00DF;e Anzahl aller m&#x00F6;glichen Merkmalsvektoren<br />einer Objektklasse ohne &#x00DC;berschneidungen zu anderen Klassen enth&#x00E4;lt,</div></form></li><li id="Q_39_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_39_1_Chk" class="MSelCheckbox" />Anzahl von Klassen, deren Merkmalsvektoren dicht beieinander liegen,</div></form></li><li id="Q_39_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_39_2_Chk" class="MSelCheckbox" />Zusammenh&#x00E4;ngende Struktur innerhalb eines digitalen Bildes,</div></form></li><li id="Q_39_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_39_3_Chk" class="MSelCheckbox" />Gebiet innerhalb eines digitalen Bildes mit Objekth&#x00E4;ufungen</div></form></li><li id="Q_39_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_39_4_Chk" class="MSelCheckbox" />Gebiet innerhalb eines digitalen Bildes mit H&#x00E4;ufungen von Objekten gleicher<br />Klassen</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(39)">Check</button></li>
+<li class="QuizQuestion" id="Q_40" style="display: none;"><div class="QuestionText">10.3 Was versteht man in der Mustererkennung unter einem Merkmalsvektor?</div><ol class="MSelAnswers"><li id="Q_40_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_40_0_Chk" class="MSelCheckbox" />n-Tupel von Zahlen einer Objektklasse im Sinne der Mustererkennung, wobei<br />jede Zahl eine f&#x00FC;r die Klasse typische Merkmalsgr&#x00F6;&#x00DF;e (Mittelwert, Maximalwert<br />usw.) repr&#x00E4;sentiert,</div></form></li><li id="Q_40_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_40_1_Chk" class="MSelCheckbox" />Vektor, welcher durch Verbindung von 2 Merkmalsvektoren im Merkmalsraum<br />gebildet wird,</div></form></li><li id="Q_40_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_40_2_Chk" class="MSelCheckbox" />Vektor, welcher durch die Verbindung der Schwerpunkte von 2 Clustern im<br />Merkmalsraum gebildet wird,</div></form></li><li id="Q_40_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_40_3_Chk" class="MSelCheckbox" />Vektor, dessen Elemente sich aus den Koordinaten eines Punktes im Merkmalsraum<br />ergeben, wobei die Koordinaten die Merkmale eines Objektes<br />darstellen</div></form></li><li id="Q_40_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_40_4_Chk" class="MSelCheckbox" />n-Tupel von Zahlen, welche die Merkmale ausschlie&#x00DF;lich von Referenzobjekten<br />enthalten</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(40)">Check</button></li>
+<li class="QuizQuestion" id="Q_41" style="display: none;"><div class="QuestionText">10.4 Wie ist die Wirkungsweise der Klassifikation mittels Software-LUT?</div><ol class="MSelAnswers"><li id="Q_41_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_41_0_Chk" class="MSelCheckbox" />Anlegen von n Merkmalen als Adressen an einen n-dimensional organisierten<br />Speicher; die Klasse ergibt sich aus dem entsprechenden Speicherinhalt,</div></form></li><li id="Q_41_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_41_1_Chk" class="MSelCheckbox" />Anlegen von n Merkmalen als Adressen an einen n-dimensional organisierten<br />Speicher; der Speicherinhalt ist als Parameter an eine Routine zu &#x00FC;bergeben,<br />welche die Klasse ermittelt und zur&#x00FC;ckgibt,</div></form></li><li id="Q_41_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_41_2_Chk" class="MSelCheckbox" />Auf den Amplitudenwert jedes Pixels eines gefundenen Objekts ist zun&#x00E4;chst ein<br />Punktoperator in Form einer Clipping-LUT anzuwenden. Anschlie&#x00DF;end kann die<br />Klassifikation sehr eindeutig mit einem Parallel-Epiped-Klassifikator<br />vorgenommen werden.</div></form></li><li id="Q_41_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_41_3_Chk" class="MSelCheckbox" />Aufruf einer Routine, welcher der Merkmalsvektor zu &#x00FC;bergeben ist. Die Routine<br />gibt eine nat&#x00FC;rliche Zahl zur&#x00FC;ck, welche wiederum als Adresse an einen eindimensionalen<br />Speicher anzulegen ist. Der Speicherinhalt dieser Adresse entspricht<br />der Klasse</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(41)">Check</button></li>
+<li class="QuizQuestion" id="Q_42" style="display: none;"><div class="QuestionText">11.1 Welche der nachfolgend aufgef&#x00FC;hrten Parameter bzw. Gr&#x00F6;&#x00DF;en gehen in den<br />Maximum-Likelihood-Klassifikator ein?</div><ol class="MSelAnswers"><li id="Q_42_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_42_0_Chk" class="MSelCheckbox" />Das Ma&#x00DF; f&#x00FC;r ein bedingtes Riskio,</div></form></li><li id="Q_42_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_42_1_Chk" class="MSelCheckbox" />eine Verlustmatrix</div></form></li><li id="Q_42_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_42_2_Chk" class="MSelCheckbox" />ein oder mehrere Merkmalsvektoren,</div></form></li><li id="Q_42_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_42_3_Chk" class="MSelCheckbox" />Clustergrenzen</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(42)">Check</button></li>
+<li class="QuizQuestion" id="Q_43" style="display: none;"><div class="QuestionText">11.2 Was wird mit dem Maximum-Likelihood-Klassifikator ermittelt?<br /></div><ol class="MSelAnswers"><li id="Q_43_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_43_0_Chk" class="MSelCheckbox" />Die Zugeh&#x00F6;rigkeit zu einer Klasse mit einem minimalen bedingten Risiko,</div></form></li><li id="Q_43_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_43_1_Chk" class="MSelCheckbox" />Die Wahrscheinlichkeit der Zugeh&#x00F6;rigkeit eines Objektes zu einer bestimmten<br />Klasse in Abh&#x00E4;ngigkeit von der festgestellten Gr&#x00F6;&#x00DF;e eines oder mehrerer Merkmals<br />des Objektes,</div></form></li><li id="Q_43_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_43_2_Chk" class="MSelCheckbox" />Die Wahrscheinlichkeit des Auftretens eines bestimmten Merkmals in einer Objektklasse</div></form></li><li id="Q_43_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_43_3_Chk" class="MSelCheckbox" />Die a priori-Wahrscheinlichkeit der Zugeh&#x00F6;rigkeit eines gefundenen Objektes zu<br />einer bestimmten Klasse,</div></form></li><li id="Q_43_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_43_4_Chk" class="MSelCheckbox" />Die Wahrscheinlichkeit der Zugeh&#x00F6;rigkeit eines Objektes zu einer bestimmten<br />Klasse in Abh&#x00E4;ngigkeit von der Klassenzugeh&#x00F6;rigkeit zuvor gefundener Objekte</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(43)">Check</button></li>
+<li class="QuizQuestion" id="Q_44" style="display: none;"><div class="QuestionText">11.3 Was ist die totale Wahrscheinlichkeit </div><ol class="MSelAnswers"><li id="Q_44_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_44_0_Chk" class="MSelCheckbox" />Die Wahrscheinlichkeit f&#x00FC;r das Auftreten eines bestimmten Ereignisses bei einem<br />Zufallsprozess,</div></form></li><li id="Q_44_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_44_1_Chk" class="MSelCheckbox" />Die Wahrscheinlichkeit der Zugeh&#x00F6;rigkeit eines gefundenen Objektes zu einer bestimmten<br />Objektklasse,</div></form></li><li id="Q_44_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_44_2_Chk" class="MSelCheckbox" />Die Wahrscheinlichkeit der Ermittlung eines Merkmals bei einem Objekt einer beliebigen<br />Klasse innerhalb einer definierten Menge von Klassen,</div></form></li><li id="Q_44_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_44_3_Chk" class="MSelCheckbox" />Die bedingte Wahrscheinlichkeit daf&#x00FC;r, dass ein ermittelter Merkmalswert zu einem<br />Objekt einer bestimmten Klasse geh&#x00F6;rt</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(44)">Check</button></li>
+<li class="QuizQuestion" id="Q_45" style="display: none;"><div class="QuestionText">11.4 Was wird mit dem Bayes-Klassifikator ermittelt?</div><ol class="MSelAnswers"><li id="Q_45_0"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_45_0_Chk" class="MSelCheckbox" />Die Wahrscheinlichkeit der Zugeh&#x00F6;rigkeit eines Objektes zu einer bestimmten<br />Klasse in Abh&#x00E4;ngigkeit von der festgestellten Gr&#x00F6;&#x00DF;e eines oder mehrerer Merkmale<br />des Objektes</div></form></li><li id="Q_45_1"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_45_1_Chk" class="MSelCheckbox" />eine Verlustmatrix</div></form></li><li id="Q_45_2"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_45_2_Chk" class="MSelCheckbox" />Ein bedingtes Risiko auf Basis der Ergebnisse des zuvor angewendeten MaximumLikelihood-Klassifikators,</div></form></li><li id="Q_45_3"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_45_3_Chk" class="MSelCheckbox" />Ein bedingtes Risiko auf Basis einer Verlustmatrix</div></form></li><li id="Q_45_4"><form method="post" action="" onsubmit="return false;"><div><input type="checkbox" id="Q_45_4_Chk" class="MSelCheckbox" />Ein bedingtes Risiko auf Basis des euklidischen Abstandes zu einem Clusterschwerpunkt<br />im Merkmalsraum</div></form></li></ol><button class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="CheckMultiSelAnswer(45)">Check</button></li></ol>
+
+
+
+</div>
+
+
+
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" onclick="HideFeedback(); return false;">&nbsp;OK&nbsp;</button>
+</div>
+
+<!-- BeginBottomNavButtons -->
+
+
+<div class="NavButtonBar" id="BottomNavBar">
+
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='contents.htm'; return false;"> Index </button>
+
+
+
+<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='nextpage.htm'; return false;">=&gt;</button>
+
+
+</div>
+
+
+
+<!-- EndBottomNavButtons -->
+
+<!-- BeginSubmissionForm -->
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>
